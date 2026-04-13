@@ -120,10 +120,10 @@
         "expr": "43 15 * * *",
         "display": "43 15 * * *"
       },
-      "next_run_at": "2026-04-13T15:43:00+08:00",
+      "next_run_at": "2026-04-14T15:43:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 2
+        "completed": 3
       },
       "prompt": "## 任务：坯布文章发布\n\n### 类目：坯布（slug=tanhuo）\n### 写作素材：\n1. 知识库：`~/.hermes/cache/documents/`下对应文件\n2. 当日trend文件：`~/.hermes/cron/output/textile_trend_YYYYMMDD.md`\n\n### 要求：\n必须选类型5（认证合规型）：GRS/Oeko-Tex/GOTS实际获取路径\n- 独立写作风格，不套模板\n- 标题35-60字，内容800-1200字\n- 配图MiniMax生成16:9，base64后随API发布\n- 探钱库APP插入≤2次，场景触发\n- 末尾评论引导钩子（读者视角）\n### 硬性要求：无图片绝对不发布。图片生成失败或下载失败，当前任务必须中止，不能以无图状态发布。\n### 发布API：POST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw，x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548",
       "deliver": "local",
@@ -135,7 +135,7 @@
       "paused_at": null,
       "paused_reason": null,
       "skill": "textile-article-publishing",
-      "last_run_at": "2026-04-13T14:25:36.815745+08:00",
+      "last_run_at": "2026-04-13T15:58:15.037483+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null
@@ -235,7 +235,7 @@
       "next_run_at": "2026-04-14T06:52:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "prompt": "## 任务：原料文章发布\n\n### 类目：原料（slug=tanjia）\n### 写作素材：\n1. 知识库：`~/.hermes/cache/documents/`下对应文件\n2. 当日trend文件：`~/.hermes/cron/output/textile_trend_YYYYMMDD.md`\n\n### 要求：\n必须选类型1（ B2B采购避坑与供应商筛选）：实际采购案例+筛选方法\n- 独立写作风格，不套模板\n- 标题35-60字，内容800-1200字\n- 配图MiniMax生成16:9，base64后随API发布\n- 探钱库APP插入≤2次，场景触发\n- 末尾评论引导钩子（读者视角）\n### 硬性要求：无图片绝对不发布。图片生成失败或下载失败，当前任务必须中止，不能以无图状态发布。\n### 发布API：POST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw，x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548",
       "deliver": "local",
@@ -246,7 +246,11 @@
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
-      "skill": "textile-article-publishing"
+      "skill": "textile-article-publishing",
+      "last_run_at": "2026-04-13T14:46:09.388192+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null
     },
     {
       "id": "fd21df7dd5c2",
@@ -256,10 +260,10 @@
         "expr": "27 9 * * *",
         "display": "27 9 * * *"
       },
-      "next_run_at": "2026-04-13T13:56:00.190944+08:00",
+      "next_run_at": "2026-04-14T09:27:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "prompt": "## 任务：原料文章发布\n\n### 类目：原料（slug=tanjia）\n### 写作素材：\n1. 知识库：`~/.hermes/cache/documents/`下对应文件\n2. 当日trend文件：`~/.hermes/cron/output/textile_trend_YYYYMMDD.md`\n\n### 要求：\n必须选类型2（行情趋势与成本拆解）：引用当日trend数据，具体数字代入\n- 独立写作风格，不套模板\n- 标题35-60字，内容800-1200字\n- 配图MiniMax生成16:9，base64后随API发布\n- 探钱库APP插入≤2次，场景触发\n- 末尾评论引导钩子（读者视角）\n### 硬性要求：无图片绝对不发布。图片生成失败或下载失败，当前任务必须中止，不能以无图状态发布。\n### 发布API：POST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw，x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548",
       "deliver": "local",
@@ -270,7 +274,11 @@
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
-      "skill": "textile-article-publishing"
+      "skill": "textile-article-publishing",
+      "last_run_at": "2026-04-13T14:52:26.535159+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null
     },
     {
       "id": "af10275a9e94",
@@ -280,10 +288,10 @@
         "expr": "33 11 * * *",
         "display": "33 11 * * *"
       },
-      "next_run_at": "2026-04-13T13:56:01.215459+08:00",
+      "next_run_at": "2026-04-14T11:33:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "prompt": "## 任务：原料文章发布\n\n### 类目：原料（slug=tanjia）\n### 写作素材：\n1. 知识库：`~/.hermes/cache/documents/`下对应文件\n2. 当日trend文件：`~/.hermes/cron/output/textile_trend_YYYYMMDD.md`\n\n### 要求：\n必须选类型3（高端料平替与降本）：平替方案+成本对比数字\n- 独立写作风格，不套模板\n- 标题35-60字，内容800-1200字\n- 配图MiniMax生成16:9，base64后随API发布\n- 探钱库APP插入≤2次，场景触发\n- 末尾评论引导钩子（读者视角）\n### 硬性要求：无图片绝对不发布。图片生成失败或下载失败，当前任务必须中止，不能以无图状态发布。\n### 发布API：POST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw，x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548",
       "deliver": "local",
@@ -294,7 +302,11 @@
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
-      "skill": "textile-article-publishing"
+      "skill": "textile-article-publishing",
+      "last_run_at": "2026-04-13T14:58:00.234217+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null
     },
     {
       "id": "59de492a794b",
@@ -304,10 +316,10 @@
         "expr": "8 14 * * *",
         "display": "8 14 * * *"
       },
-      "next_run_at": "2026-04-13T13:56:02.222888+08:00",
+      "next_run_at": "2026-04-14T14:08:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 2
       },
       "prompt": "## 任务：原料文章发布\n\n### 类目：原料（slug=tanjia）\n### 写作素材：\n1. 知识库：`~/.hermes/cache/documents/`下对应文件\n2. 当日trend文件：`~/.hermes/cron/output/textile_trend_YYYYMMDD.md`\n\n### 要求：\n必须选类型4（原材料深度对标与极限PK）：具体参数横向对比\n- 独立写作风格，不套模板\n- 标题35-60字，内容800-1200字\n- 配图MiniMax生成16:9，base64后随API发布\n- 探钱库APP插入≤2次，场景触发\n- 末尾评论引导钩子（读者视角）\n### 硬性要求：无图片绝对不发布。图片生成失败或下载失败，当前任务必须中止，不能以无图状态发布。\n### 发布API：POST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw，x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548",
       "deliver": "local",
@@ -319,7 +331,7 @@
       "paused_at": null,
       "paused_reason": null,
       "skill": "textile-article-publishing",
-      "last_run_at": "2026-04-13T12:44:32.511384+08:00",
+      "last_run_at": "2026-04-13T15:02:43.929272+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null
@@ -332,10 +344,10 @@
         "expr": "52 16 * * *",
         "display": "52 16 * * *"
       },
-      "next_run_at": "2026-04-13T13:56:13.384350+08:00",
+      "next_run_at": "2026-04-13T16:52:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 2
       },
       "prompt": "## 任务：原料文章发布\n\n### 类目：原料（slug=tanjia）\n### 写作素材：\n1. 知识库：`~/.hermes/cache/documents/`下对应文件\n2. 当日trend文件：`~/.hermes/cron/output/textile_trend_YYYYMMDD.md`\n\n### 要求：\n必须选类型5（新品开发与营销卖点提炼）：终端应用场景+卖点分析\n- 独立写作风格，不套模板\n- 标题35-60字，内容800-1200字\n- 配图MiniMax生成16:9，base64后随API发布\n- 探钱库APP插入≤2次，场景触发\n- 末尾评论引导钩子（读者视角）\n### 硬性要求：无图片绝对不发布。图片生成失败或下载失败，当前任务必须中止，不能以无图状态发布。\n### 发布API：POST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw，x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548",
       "deliver": "local",
@@ -347,7 +359,7 @@
       "paused_at": null,
       "paused_reason": null,
       "skill": "textile-article-publishing",
-      "last_run_at": "2026-04-13T12:47:28.238651+08:00",
+      "last_run_at": "2026-04-13T15:07:43.620477+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null
@@ -360,10 +372,10 @@
         "expr": "15 19 * * *",
         "display": "15 19 * * *"
       },
-      "next_run_at": "2026-04-13T13:56:14.392719+08:00",
+      "next_run_at": "2026-04-13T19:15:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 2
       },
       "prompt": "## 任务：原料文章发布\n\n### 类目：原料（slug=tanjia）\n### 写作素材：\n1. 知识库：`~/.hermes/cache/documents/`下对应文件\n2. 当日trend文件：`~/.hermes/cron/output/textile_trend_YYYYMMDD.md`\n\n### 要求：\n必须选类型6（前沿加工工艺与组织适配）：工艺原理+实际应用\n- 独立写作风格，不套模板\n- 标题35-60字，内容800-1200字\n- 配图MiniMax生成16:9，base64后随API发布\n- 探钱库APP插入≤2次，场景触发\n- 末尾评论引导钩子（读者视角）\n### 硬性要求：无图片绝对不发布。图片生成失败或下载失败，当前任务必须中止，不能以无图状态发布。\n### 发布API：POST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw，x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548",
       "deliver": "local",
@@ -375,7 +387,7 @@
       "paused_at": null,
       "paused_reason": null,
       "skill": "textile-article-publishing",
-      "last_run_at": "2026-04-13T13:10:18.181143+08:00",
+      "last_run_at": "2026-04-13T15:11:59.674873+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null
@@ -388,10 +400,10 @@
         "expr": "7 22 * * *",
         "display": "7 22 * * *"
       },
-      "next_run_at": "2026-04-13T13:56:15.401567+08:00",
+      "next_run_at": "2026-04-13T22:07:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 2
       },
       "prompt": "## 任务：原料文章发布\n\n### 类目：原料（slug=tanjia）\n### 写作素材：\n1. 知识库：`~/.hermes/cache/documents/`下对应文件\n2. 当日trend文件：`~/.hermes/cron/output/textile_trend_YYYYMMDD.md`\n\n### 要求：\n必须选类型9（大货生产翻车案例复盘）：真实翻车案例+原因分析+预防方法\n- 独立写作风格，不套模板\n- 标题35-60字，内容800-1200字\n- 配图MiniMax生成16:9，base64后随API发布\n- 探钱库APP插入≤2次，场景触发\n- 末尾评论引导钩子（读者视角）\n### 硬性要求：无图片绝对不发布。图片生成失败或下载失败，当前任务必须中止，不能以无图状态发布。\n### 发布API：POST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw，x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548",
       "deliver": "local",
@@ -403,7 +415,7 @@
       "paused_at": null,
       "paused_reason": null,
       "skill": "textile-article-publishing",
-      "last_run_at": "2026-04-13T13:20:22.450118+08:00",
+      "last_run_at": "2026-04-13T15:15:36.023120+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null
@@ -416,10 +428,10 @@
         "expr": "58 23 * * *",
         "display": "58 23 * * *"
       },
-      "next_run_at": "2026-04-13T13:56:32.775793+08:00",
+      "next_run_at": "2026-04-13T23:58:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 2
       },
       "prompt": "## 任务：原料文章发布\n\n### 类目：原料（slug=tanjia）\n### 写作素材：\n1. 知识库：`~/.hermes/cache/documents/`下对应文件\n2. 当日trend文件：`~/.hermes/cron/output/textile_trend_YYYYMMDD.md`\n\n### 要求：\n必须选类型8（验货标准与物理指标揭秘）：具体指标+检测方法\n- 独立写作风格，不套模板\n- 标题35-60字，内容800-1200字\n- 配图MiniMax生成16:9，base64后随API发布\n- 探钱库APP插入≤2次，场景触发\n- 末尾评论引导钩子（读者视角）\n### 硬性要求：无图片绝对不发布。图片生成失败或下载失败，当前任务必须中止，不能以无图状态发布。\n### 发布API：POST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw，x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548",
       "deliver": "local",
@@ -431,7 +443,7 @@
       "paused_at": null,
       "paused_reason": null,
       "skill": "textile-article-publishing",
-      "last_run_at": "2026-04-13T13:23:14.213403+08:00",
+      "last_run_at": "2026-04-13T15:21:33.203468+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null
@@ -444,10 +456,10 @@
         "expr": "15 6 * * *",
         "display": "15 6 * * *"
       },
-      "next_run_at": "2026-04-13T13:56:33.781792+08:00",
+      "next_run_at": "2026-04-14T06:15:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "prompt": "## 任务：辅料文章发布\n\n### 类目：辅料（slug=tanjia）\n### 写作素材：\n1. 知识库：`~/.hermes/cache/documents/`下对应文件\n2. 当日trend文件：`~/.hermes/cron/output/textile_trend_YYYYMMDD.md`\n\n### 要求：\n必须选类型1（选型指南）：拉链/纽扣/衬布等具体选型方法\n- 独立写作风格，不套模板\n- 标题35-60字，内容800-1200字\n- 配图MiniMax生成16:9，base64后随API发布\n- 探钱库APP插入≤2次，场景触发\n- 末尾评论引导钩子（读者视角）\n### 硬性要求：无图片绝对不发布。图片生成失败或下载失败，当前任务必须中止，不能以无图状态发布。\n### 发布API：POST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw，x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548",
       "deliver": "local",
@@ -458,7 +470,11 @@
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
-      "skill": "textile-article-publishing"
+      "skill": "textile-article-publishing",
+      "last_run_at": "2026-04-13T15:26:20.837581+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null
     },
     {
       "id": "3873b5256668",
@@ -468,10 +484,10 @@
         "expr": "8 8 * * *",
         "display": "8 8 * * *"
       },
-      "next_run_at": "2026-04-13T13:56:34.787981+08:00",
+      "next_run_at": "2026-04-14T08:08:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "prompt": "## 任务：辅料文章发布\n\n### 类目：辅料（slug=tanjia）\n### 写作素材：\n1. 知识库：`~/.hermes/cache/documents/`下对应文件\n2. 当日trend文件：`~/.hermes/cron/output/textile_trend_YYYYMMDD.md`\n\n### 要求：\n必须选类型2（验货标准）：AQL抽检+具体检测方法\n- 独立写作风格，不套模板\n- 标题35-60字，内容800-1200字\n- 配图MiniMax生成16:9，base64后随API发布\n- 探钱库APP插入≤2次，场景触发\n- 末尾评论引导钩子（读者视角）\n### 硬性要求：无图片绝对不发布。图片生成失败或下载失败，当前任务必须中止，不能以无图状态发布。\n### 发布API：POST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw，x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548",
       "deliver": "local",
@@ -482,7 +498,11 @@
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
-      "skill": "textile-article-publishing"
+      "skill": "textile-article-publishing",
+      "last_run_at": "2026-04-13T15:30:36.279411+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null
     },
     {
       "id": "c7d459be5bce",
@@ -492,10 +512,10 @@
         "expr": "7 11 * * *",
         "display": "7 11 * * *"
       },
-      "next_run_at": "2026-04-13T13:56:40.954589+08:00",
+      "next_run_at": "2026-04-14T11:07:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "prompt": "## 任务：辅料文章发布\n\n### 类目：辅料（slug=tanjia）\n### 写作素材：\n1. 知识库：`~/.hermes/cache/documents/`下对应文件\n2. 当日trend文件：`~/.hermes/cron/output/textile_trend_YYYYMMDD.md`\n\n### 要求：\n必须选类型3（成本核算）：成本拆解+损耗计算具体数字\n- 独立写作风格，不套模板\n- 标题35-60字，内容800-1200字\n- 配图MiniMax生成16:9，base64后随API发布\n- 探钱库APP插入≤2次，场景触发\n- 末尾评论引导钩子（读者视角）\n### 硬性要求：无图片绝对不发布。图片生成失败或下载失败，当前任务必须中止，不能以无图状态发布。\n### 发布API：POST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw，x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548",
       "deliver": "local",
@@ -506,7 +526,11 @@
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
-      "skill": "textile-article-publishing"
+      "skill": "textile-article-publishing",
+      "last_run_at": "2026-04-13T15:30:37.136628+08:00",
+      "last_status": "error",
+      "last_error": "RuntimeError: cannot schedule new futures after interpreter shutdown",
+      "last_delivery_error": null
     },
     {
       "id": "ba769985eec9",
@@ -516,7 +540,7 @@
         "expr": "47 13 * * *",
         "display": "47 13 * * *"
       },
-      "next_run_at": "2026-04-13T13:56:41.963579+08:00",
+      "next_run_at": "2026-04-14T13:47:00+08:00",
       "repeat": {
         "times": null,
         "completed": 2
@@ -544,10 +568,10 @@
         "expr": "15 16 * * *",
         "display": "15 16 * * *"
       },
-      "next_run_at": "2026-04-13T13:56:42.970674+08:00",
+      "next_run_at": "2026-04-14T16:15:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 2
       },
       "prompt": "## 任务：辅料文章发布\n\n### 类目：辅料（slug=tanjia）\n### 写作素材：\n1. 知识库：`~/.hermes/cache/documents/`下对应文件\n2. 当日trend文件：`~/.hermes/cron/output/textile_trend_YYYYMMDD.md`\n\n### 要求：\n必须选类型5（产业分析）：产业带分布+供应商评估方法\n- 独立写作风格，不套模板\n- 标题35-60字，内容800-1200字\n- 配图MiniMax生成16:9，base64后随API发布\n- 探钱库APP插入≤2次，场景触发\n- 末尾评论引导钩子（读者视角）\n### 硬性要求：无图片绝对不发布。图片生成失败或下载失败，当前任务必须中止，不能以无图状态发布。\n### 发布API：POST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw，x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548",
       "deliver": "local",
@@ -559,7 +583,7 @@
       "paused_at": null,
       "paused_reason": null,
       "skill": "textile-article-publishing",
-      "last_run_at": "2026-04-13T12:53:39.449722+08:00",
+      "last_run_at": "2026-04-13T16:19:46.721086+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null
@@ -572,10 +596,10 @@
         "expr": "43 18 * * *",
         "display": "43 18 * * *"
       },
-      "next_run_at": "2026-04-13T13:56:49.531835+08:00",
+      "next_run_at": "2026-04-13T18:43:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 2
       },
       "prompt": "## 任务：辅料文章发布\n\n### 类目：辅料（slug=tanjia）\n### 写作素材：\n1. 知识库：`~/.hermes/cache/documents/`下对应文件\n2. 当日trend文件：`~/.hermes/cron/output/textile_trend_YYYYMMDD.md`\n\n### 要求：\n必须选类型6（行业揭秘）：B端采购避坑+真实案例\n- 独立写作风格，不套模板\n- 标题35-60字，内容800-1200字\n- 配图MiniMax生成16:9，base64后随API发布\n- 探钱库APP插入≤2次，场景触发\n- 末尾评论引导钩子（读者视角）\n### 硬性要求：无图片绝对不发布。图片生成失败或下载失败，当前任务必须中止，不能以无图状态发布。\n### 发布API：POST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw，x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548",
       "deliver": "local",
@@ -587,7 +611,7 @@
       "paused_at": null,
       "paused_reason": null,
       "skill": "textile-article-publishing",
-      "last_run_at": "2026-04-13T12:57:44.831187+08:00",
+      "last_run_at": "2026-04-13T15:39:33.871859+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null
@@ -600,10 +624,10 @@
         "expr": "58 20 * * *",
         "display": "58 20 * * *"
       },
-      "next_run_at": "2026-04-13T13:56:50.539661+08:00",
+      "next_run_at": "2026-04-13T20:58:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 2
       },
       "prompt": "## 任务：辅料文章发布\n\n### 类目：辅料（slug=tanjia）\n### 写作素材：\n1. 知识库：`~/.hermes/cache/documents/`下对应文件\n2. 当日trend文件：`~/.hermes/cron/output/textile_trend_YYYYMMDD.md`\n\n### 要求：\n必须选类型1（选型指南）：拉链/纽扣/衬布等具体选型方法\n- 独立写作风格，不套模板\n- 标题35-60字，内容800-1200字\n- 配图MiniMax生成16:9，base64后随API发布\n- 探钱库APP插入≤2次，场景触发\n- 末尾评论引导钩子（读者视角）\n### 硬性要求：无图片绝对不发布。图片生成失败或下载失败，当前任务必须中止，不能以无图状态发布。\n### 发布API：POST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw，x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548",
       "deliver": "local",
@@ -615,7 +639,7 @@
       "paused_at": null,
       "paused_reason": null,
       "skill": "textile-article-publishing",
-      "last_run_at": "2026-04-13T13:26:35.849974+08:00",
+      "last_run_at": "2026-04-13T15:44:27.755780+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null
@@ -628,10 +652,10 @@
         "expr": "33 22 * * *",
         "display": "33 22 * * *"
       },
-      "next_run_at": "2026-04-13T13:56:51.547042+08:00",
+      "next_run_at": "2026-04-13T22:33:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 2
       },
       "prompt": "## 任务：辅料文章发布\n\n### 类目：辅料（slug=tanjia）\n### 写作素材：\n1. 知识库：`~/.hermes/cache/documents/`下对应文件\n2. 当日trend文件：`~/.hermes/cron/output/textile_trend_YYYYMMDD.md`\n\n### 要求：\n必须选类型2（验货标准）：AQL抽检+具体检测方法\n- 独立写作风格，不套模板\n- 标题35-60字，内容800-1200字\n- 配图MiniMax生成16:9，base64后随API发布\n- 探钱库APP插入≤2次，场景触发\n- 末尾评论引导钩子（读者视角）\n### 硬性要求：无图片绝对不发布。图片生成失败或下载失败，当前任务必须中止，不能以无图状态发布。\n### 发布API：POST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw，x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548",
       "deliver": "local",
@@ -643,7 +667,7 @@
       "paused_at": null,
       "paused_reason": null,
       "skill": "textile-article-publishing",
-      "last_run_at": "2026-04-13T13:32:55.654456+08:00",
+      "last_run_at": "2026-04-13T15:49:30.229088+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null
@@ -760,16 +784,21 @@
         "expr": "12 15 * * *",
         "display": "12 15 * * *"
       },
-      "next_run_at": "2026-04-13T15:12:00+08:00",
+      "next_run_at": "2026-04-14T15:12:00+08:00",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "prompt": "## 任务：布行文章发布\n\n### 类目：布行（slug=tanhuo）\n### 写作素材：\n1. 知识库：`/home/tanqianku/.hermes/cache/documents/doc_c6b4c1a1cb3b_布行.txt`\n2. 当日trend文件：`/home/tanqianku/.hermes/cron/output/textile_trend_YYYYMMDD.md`（含布行视角五大分析角度）\n\n### 写作要求：\n- 核心定位：贸易流通视角——帮布行从业者看懂市场、找对货源、避开交易陷阱\n- 写作立场不是生产视角，不是教你织布，而是帮读者判断该不该拿货、哪个产业带更划算、价格高低、供应商说的是否属实\n- 文章类型：类型5（价格波动传导分析）\n- 必须读取当日trend文件的\"布行视角：今日市场观察\"模块，以此为切入点展开分析\n- 标题40-60字，带数字/对比/行动信号\n- 正文开头直接入题，不废话\n- 文中插入配图（MiniMax生成，16:9，英文纯视觉prompt）\n- 配图插入文章中间（系统自动截取缩略图）\n- 探钱库APP插入≤2次，场景触发，不硬广\n- 末尾有读者视角的评论引导钩子\n- 禁止引用其他平台\n- 无配图绝对不发布\n\n### 发布API：\nPOST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw\nHeader: x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548\n",
       "deliver": "local",
       "skills": [
         "textile-article-publishing"
-      ]
+      ],
+      "last_run_at": "2026-04-13T15:53:01.432126+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "state": "scheduled"
     },
     {
       "id": "55e456596c9114ce",
@@ -827,7 +856,159 @@
       "skills": [
         "textile-article-publishing"
       ]
+    },
+    {
+      "id": "fc27d2e865d16a78",
+      "name": "服装文章发布-06:33",
+      "schedule": {
+        "kind": "cron",
+        "expr": "33 6 * * *",
+        "display": "33 6 * * *"
+      },
+      "next_run_at": "2026-04-14T06:33:00+08:00",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "prompt": "## 任务：服装文章发布\n\n### 类目：服装（slug=tanhuo）\n### 写作素材：\n1. 知识库：`/home/tanqianku/.hermes/cache/documents/doc_d6412087bfb4_服装.txt`\n2. 当日trend文件：`/home/tanqianku/.hermes/cron/output/textile_trend_YYYYMMDD.md`（含服装视角五大分析角度）\n\n### 写作要求：\n- 核心定位：下游采购决策视角——帮服装从业者判断面料值不值得拿、怎么跟客人解释、备货策略怎么定\n- 写作立场不是生产视角，不是教人设计衣服，而是帮读者解决拿货决策问题\n- 文章类型：类型1（面料成本拆解）\n- 必须读取当日trend文件的\"服装视角：下游采购观察\"模块，以此为切入点展开分析\n- 标题40-60字，带数字/对比/行动信号\n- 正文开头直接入题，不废话\n- 文中插入配图（MiniMax生成，16:9，英文纯视觉prompt）\n- 配图插入文章中间（系统自动截取缩略图）\n- 探钱库APP插入≤2次，场景触发，不硬广\n- 末尾有读者视角的评论引导钩子\n- 禁止引用其他平台\n- 无配图绝对不发布\n\n### 发布API：\nPOST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw\nHeader: x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548\n",
+      "deliver": "local",
+      "skills": [
+        "textile-article-publishing"
+      ]
+    },
+    {
+      "id": "d310e9895a64f91c",
+      "name": "服装文章发布-07:58",
+      "schedule": {
+        "kind": "cron",
+        "expr": "58 7 * * *",
+        "display": "58 7 * * *"
+      },
+      "next_run_at": "2026-04-14T07:58:00+08:00",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "prompt": "## 任务：服装文章发布\n\n### 类目：服装（slug=tanhuo）\n### 写作素材：\n1. 知识库：`/home/tanqianku/.hermes/cache/documents/doc_d6412087bfb4_服装.txt`\n2. 当日trend文件：`/home/tanqianku/.hermes/cron/output/textile_trend_YYYYMMDD.md`（含服装视角五大分析角度）\n\n### 写作要求：\n- 核心定位：下游采购决策视角——帮服装从业者判断面料值不值得拿、怎么跟客人解释、备货策略怎么定\n- 写作立场不是生产视角，不是教人设计衣服，而是帮读者解决拿货决策问题\n- 文章类型：类型2（拿货渠道分析）\n- 必须读取当日trend文件的\"服装视角：下游采购观察\"模块，以此为切入点展开分析\n- 标题40-60字，带数字/对比/行动信号\n- 正文开头直接入题，不废话\n- 文中插入配图（MiniMax生成，16:9，英文纯视觉prompt）\n- 配图插入文章中间（系统自动截取缩略图）\n- 探钱库APP插入≤2次，场景触发，不硬广\n- 末尾有读者视角的评论引导钩子\n- 禁止引用其他平台\n- 无配图绝对不发布\n\n### 发布API：\nPOST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw\nHeader: x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548\n",
+      "deliver": "local",
+      "skills": [
+        "textile-article-publishing"
+      ]
+    },
+    {
+      "id": "9ff81a8c225c2074",
+      "name": "服装文章发布-09:13",
+      "schedule": {
+        "kind": "cron",
+        "expr": "13 9 * * *",
+        "display": "13 9 * * *"
+      },
+      "next_run_at": "2026-04-14T09:13:00+08:00",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "prompt": "## 任务：服装文章发布\n\n### 类目：服装（slug=tanhuo）\n### 写作素材：\n1. 知识库：`/home/tanqianku/.hermes/cache/documents/doc_d6412087bfb4_服装.txt`\n2. 当日trend文件：`/home/tanqianku/.hermes/cron/output/textile_trend_YYYYMMDD.md`（含服装视角五大分析角度）\n\n### 写作要求：\n- 核心定位：下游采购决策视角——帮服装从业者判断面料值不值得拿、怎么跟客人解释、备货策略怎么定\n- 写作立场不是生产视角，不是教人设计衣服，而是帮读者解决拿货决策问题\n- 文章类型：类型3（面料卖点提炼）\n- 必须读取当日trend文件的\"服装视角：下游采购观察\"模块，以此为切入点展开分析\n- 标题40-60字，带数字/对比/行动信号\n- 正文开头直接入题，不废话\n- 文中插入配图（MiniMax生成，16:9，英文纯视觉prompt）\n- 配图插入文章中间（系统自动截取缩略图）\n- 探钱库APP插入≤2次，场景触发，不硬广\n- 末尾有读者视角的评论引导钩子\n- 禁止引用其他平台\n- 无配图绝对不发布\n\n### 发布API：\nPOST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw\nHeader: x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548\n",
+      "deliver": "local",
+      "skills": [
+        "textile-article-publishing"
+      ]
+    },
+    {
+      "id": "ed1d06a70ada937c",
+      "name": "服装文章发布-11:48",
+      "schedule": {
+        "kind": "cron",
+        "expr": "48 11 * * *",
+        "display": "48 11 * * *"
+      },
+      "next_run_at": "2026-04-14T11:48:00+08:00",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "prompt": "## 任务：服装文章发布\n\n### 类目：服装（slug=tanhuo）\n### 写作素材：\n1. 知识库：`/home/tanqianku/.hermes/cache/documents/doc_d6412087bfb4_服装.txt`\n2. 当日trend文件：`/home/tanqianku/.hermes/cron/output/textile_trend_YYYYMMDD.md`（含服装视角五大分析角度）\n\n### 写作要求：\n- 核心定位：下游采购决策视角——帮服装从业者判断面料值不值得拿、怎么跟客人解释、备货策略怎么定\n- 写作立场不是生产视角，不是教人设计衣服，而是帮读者解决拿货决策问题\n- 文章类型：类型4（趋势预判）\n- 必须读取当日trend文件的\"服装视角：下游采购观察\"模块，以此为切入点展开分析\n- 标题40-60字，带数字/对比/行动信号\n- 正文开头直接入题，不废话\n- 文中插入配图（MiniMax生成，16:9，英文纯视觉prompt）\n- 配图插入文章中间（系统自动截取缩略图）\n- 探钱库APP插入≤2次，场景触发，不硬广\n- 末尾有读者视角的评论引导钩子\n- 禁止引用其他平台\n- 无配图绝对不发布\n\n### 发布API：\nPOST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw\nHeader: x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548\n",
+      "deliver": "local",
+      "skills": [
+        "textile-article-publishing"
+      ]
+    },
+    {
+      "id": "fb4d50f383a0aece",
+      "name": "服装文章发布-14:33",
+      "schedule": {
+        "kind": "cron",
+        "expr": "33 14 * * *",
+        "display": "33 14 * * *"
+      },
+      "next_run_at": "2026-04-14T14:33:00+08:00",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "prompt": "## 任务：服装文章发布\n\n### 类目：服装（slug=tanhuo）\n### 写作素材：\n1. 知识库：`/home/tanqianku/.hermes/cache/documents/doc_d6412087bfb4_服装.txt`\n2. 当日trend文件：`/home/tanqianku/.hermes/cron/output/textile_trend_YYYYMMDD.md`（含服装视角五大分析角度）\n\n### 写作要求：\n- 核心定位：下游采购决策视角——帮服装从业者判断面料值不值得拿、怎么跟客人解释、备货策略怎么定\n- 写作立场不是生产视角，不是教人设计衣服，而是帮读者解决拿货决策问题\n- 文章类型：类型5（质量鉴别）\n- 必须读取当日trend文件的\"服装视角：下游采购观察\"模块，以此为切入点展开分析\n- 标题40-60字，带数字/对比/行动信号\n- 正文开头直接入题，不废话\n- 文中插入配图（MiniMax生成，16:9，英文纯视觉prompt）\n- 配图插入文章中间（系统自动截取缩略图）\n- 探钱库APP插入≤2次，场景触发，不硬广\n- 末尾有读者视角的评论引导钩子\n- 禁止引用其他平台\n- 无配图绝对不发布\n\n### 发布API：\nPOST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw\nHeader: x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548\n",
+      "deliver": "local",
+      "skills": [
+        "textile-article-publishing"
+      ]
+    },
+    {
+      "id": "bc705c6109bf20ed",
+      "name": "服装文章发布-16:07",
+      "schedule": {
+        "kind": "cron",
+        "expr": "7 16 * * *",
+        "display": "7 16 * * *"
+      },
+      "next_run_at": "2026-04-14T16:07:00+08:00",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "prompt": "## 任务：服装文章发布\n\n### 类目：服装（slug=tanhuo）\n### 写作素材：\n1. 知识库：`/home/tanqianku/.hermes/cache/documents/doc_d6412087bfb4_服装.txt`\n2. 当日trend文件：`/home/tanqianku/.hermes/cron/output/textile_trend_YYYYMMDD.md`（含服装视角五大分析角度）\n\n### 写作要求：\n- 核心定位：下游采购决策视角——帮服装从业者判断面料值不值得拿、怎么跟客人解释、备货策略怎么定\n- 写作立场不是生产视角，不是教人设计衣服，而是帮读者解决拿货决策问题\n- 文章类型：类型6（场景选品方案）\n- 必须读取当日trend文件的\"服装视角：下游采购观察\"模块，以此为切入点展开分析\n- 标题40-60字，带数字/对比/行动信号\n- 正文开头直接入题，不废话\n- 文中插入配图（MiniMax生成，16:9，英文纯视觉prompt）\n- 配图插入文章中间（系统自动截取缩略图）\n- 探钱库APP插入≤2次，场景触发，不硬广\n- 末尾有读者视角的评论引导钩子\n- 禁止引用其他平台\n- 无配图绝对不发布\n\n### 发布API：\nPOST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw\nHeader: x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548\n",
+      "deliver": "local",
+      "skills": [
+        "textile-article-publishing"
+      ]
+    },
+    {
+      "id": "4133d97a3fdeb3c1",
+      "name": "服装文章发布-18:55",
+      "schedule": {
+        "kind": "cron",
+        "expr": "55 18 * * *",
+        "display": "55 18 * * *"
+      },
+      "next_run_at": "2026-04-13T18:55:00+08:00",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "prompt": "## 任务：服装文章发布\n\n### 类目：服装（slug=tanhuo）\n### 写作素材：\n1. 知识库：`/home/tanqianku/.hermes/cache/documents/doc_d6412087bfb4_服装.txt`\n2. 当日trend文件：`/home/tanqianku/.hermes/cron/output/textile_trend_YYYYMMDD.md`（含服装视角五大分析角度）\n\n### 写作要求：\n- 核心定位：下游采购决策视角——帮服装从业者判断面料值不值得拿、怎么跟客人解释、备货策略怎么定\n- 写作立场不是生产视角，不是教人设计衣服，而是帮读者解决拿货决策问题\n- 文章类型：类型7（认证合规要求）\n- 必须读取当日trend文件的\"服装视角：下游采购观察\"模块，以此为切入点展开分析\n- 标题40-60字，带数字/对比/行动信号\n- 正文开头直接入题，不废话\n- 文中插入配图（MiniMax生成，16:9，英文纯视觉prompt）\n- 配图插入文章中间（系统自动截取缩略图）\n- 探钱库APP插入≤2次，场景触发，不硬广\n- 末尾有读者视角的评论引导钩子\n- 禁止引用其他平台\n- 无配图绝对不发布\n\n### 发布API：\nPOST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw\nHeader: x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548\n",
+      "deliver": "local",
+      "skills": [
+        "textile-article-publishing"
+      ]
+    },
+    {
+      "id": "04055d024ed09caa",
+      "name": "服装文章发布-21:37",
+      "schedule": {
+        "kind": "cron",
+        "expr": "37 21 * * *",
+        "display": "37 21 * * *"
+      },
+      "next_run_at": "2026-04-13T21:37:00+08:00",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "prompt": "## 任务：服装文章发布\n\n### 类目：服装（slug=tanhuo）\n### 写作素材：\n1. 知识库：`/home/tanqianku/.hermes/cache/documents/doc_d6412087bfb4_服装.txt`\n2. 当日trend文件：`/home/tanqianku/.hermes/cron/output/textile_trend_YYYYMMDD.md`（含服装视角五大分析角度）\n\n### 写作要求：\n- 核心定位：下游采购决策视角——帮服装从业者判断面料值不值得拿、怎么跟客人解释、备货策略怎么定\n- 写作立场不是生产视角，不是教人设计衣服，而是帮读者解决拿货决策问题\n- 文章类型：类型8（供应商筛选）\n- 必须读取当日trend文件的\"服装视角：下游采购观察\"模块，以此为切入点展开分析\n- 标题40-60字，带数字/对比/行动信号\n- 正文开头直接入题，不废话\n- 文中插入配图（MiniMax生成，16:9，英文纯视觉prompt）\n- 配图插入文章中间（系统自动截取缩略图）\n- 探钱库APP插入≤2次，场景触发，不硬广\n- 末尾有读者视角的评论引导钩子\n- 禁止引用其他平台\n- 无配图绝对不发布\n\n### 发布API：\nPOST https://gw.tanqianku.com/_data_bus/v1/webhook/openclaw\nHeader: x-openclaw-secret: c9f65f23d9a87f41298a56c7b989a673d74ddc1fc92b196985e2b9fe06240548\n",
+      "deliver": "local",
+      "skills": [
+        "textile-article-publishing"
+      ]
     }
   ],
-  "updated_at": "2026-04-13T14:39:10.348232+08:00"
+  "updated_at": "2026-04-13T16:19:46.722555+08:00"
 }
