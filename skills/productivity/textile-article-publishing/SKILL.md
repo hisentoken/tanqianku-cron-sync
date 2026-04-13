@@ -253,6 +253,17 @@ prompt示例：
 - 坯布：35-60字
 - 原料：40-60字
 - 辅料：40-60字
+- 布行：40-60字
+- 服装：40-60字
+
+### 输出格式（硬性！所有类目必须遵守）
+**必须直接生成HTML内容字符串，不是Markdown，不是纯文本！**
+- 用 `<h2>` 表示章节标题，如 `<h2>一、棉花系：成本支撑转强，拿货窗口在收窄</h2>`
+- 用 `<p>` 包段落，如 `<p>正文内容</p>`
+- 用 `<table><tr><td>...</td></tr></table>` 表示表格，禁止用Markdown表格格式
+- 用 `<ul><li>` 表示列表，禁止用中文顿号或纯换行
+- 图片用 `[插图]` 占位符标记插入位置
+- **绝对禁止输出Markdown格式**（不能用 `#`、`##`、`|` 表格等Markdown语法）
 ## 写作事实核查底线（硬性！写完必查，错了永不原谅）
 
 ### 地理位置（绝对不能混）
@@ -284,6 +295,7 @@ prompt示例：
 - `<h2>` — 每个分析维度/章节用二级标题，长度10-20字，如 `<h2>一、棉花系成本支撑转强</h2>`
 - `<p>` — 每段正文必须包在 `<p>` 中，禁止裸文字串联
 - `<ul><li>` — 列表项用标准ul/li，禁止用中文顿号或换行冒充列表
+- `<table>` — 表格必须用 `<table><tr><th>...</th></tr><tr><td>...</td></tr></table>`，禁止Markdown表格
 - `<p>` 段落之间必须有换行分隔（HTML里是 `</p>\n<p>`）
 - 禁止：大段文字（超过200字无小标题分割）、连续多行无 `<p>` 包裹的文字、所有内容堆在一个 `<div>` 里
 
@@ -291,6 +303,9 @@ prompt示例：
 ```python
 import re
 html = html_content  # 待发布HTML
+# 0. 禁止Markdown格式（Markdown字符出现即中止）
+md_chars = re.findall(r'#{1,6}\s|[*\-_]{3,}|^\|[^\n]+\|$', html, re.MULTILINE)
+assert not md_chars, f"发现Markdown语法（{md_chars}），HTML拼接代码未生效，当前任务中止，禁止发布！"
 # 1. 必须有<h2>标签
 h2s = re.findall(r'<h2[^>]*>(.*?)</h2>', html)
 assert len(h2s) >= 2, f"文章仅有{len(h2s)}个<h2>，少于2个，结构混乱，当前任务中止！"
@@ -301,8 +316,8 @@ for seg in segments:
     seg_text = re.sub(r'<[^>]+>', '', seg)
     if len(seg_text.strip()) > 250:
         print(f"警告：发现{len(seg_text.strip())}字无小标题段落，建议拆分：{seg_text[:80]}...")
-# 4. 图片已正确独立成段（前一条规则已覆盖）
-assert 'data:image/jpeg;base64,' in html, "HTML中没有找到base64图片，当前任务必须中止，禁止发布！"
+# 4. 图片已正确独立成段
+assert 'data:image/jpeg;base64,' in html, "HTML中没有找到base64图片，当前任务必须中止，禁止发布！
 ```
 
 ### 图片压缩流程（硬性步骤，必须执行）
