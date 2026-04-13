@@ -268,6 +268,7 @@ prompt示例：
 
 ### 发布绝对要求
 - **无图片绝对不发布**：图片生成失败或下载失败，当前任务必须中止
+- **图片必须独立成段，禁止内嵌段落中**：`[插图]` 标记必须在段落开头独立成行或独占一行，前后必须有空行隔断。绝对禁止在句子中间插入图片，否则必须拆分段落或移动图片到段首后再发布
 - 探钱库APP插入≤2次，场景触发，不硬广
 - 禁止引用其他平台
 - 末尾评论引导从读者视角出发
@@ -305,12 +306,21 @@ b64 = base64.b64encode(open(compressed_path, "rb").read()).decode()
 1. MiniMax图片生成完成后，立即用 `urllib.request.urlopen()` 下载到本地 `~/.hermes/cron/output/images/`
 2. **立即压缩**（质量85，宽1280）到150KB以下，验证通过才继续
 3. 用压缩后的图片做 `base64.b64encode(open(compressed_path,'rb').read()).decode()`
-4. 拼接HTML：`content = content.replace('[插图]', f'<img src="data:image/jpeg;base64,{b64}" />')`
-5. **发布前自检**：在POST之前，用以下Python代码验证HTML中确实含有 `data:image/jpeg;base64,` 字符串：
+4. **拼接HTML（图片必须独立成段，禁止内嵌段落中）**：
+   - 替换方式：`content = content.replace('[插图]', f'<p style="text-align:center;margin:16px 0;"><img src="data:image/jpeg;base64,{b64}" style="max-width:100%;border-radius:8px;" /></p>')`
+   - **关键约束**：`[插图]` 标记必须出现在**段落开头独立成行**，或独占一行。LLM写作时必须在 `[插图]` 前后保留空行，确保图片前后都有段落分隔。绝对禁止把 `[插图]` 放在句子中间或段落内部。
+   - 如果 LLM 把 `[插图]` 放在了段落中间（如 `xxx[插图]xxx`），发布前必须将其拆分为 `xxx</p><p>...[插图]...</p><p>xxx` 或整体前移图片到段首
+5. **发布前自检**（两项都必须通过）：
    ```python
+   # 检查1：HTML中确实含有base64图片
    assert 'data:image/jpeg;base64,' in html_content, "HTML中没有找到base64图片，当前任务必须中止，禁止发布！"
+   # 检查2：图片前后必须是段落分隔（不能内嵌在句子中间）
+   import re
+   # 匹配 <p>...</p> 中间有 <img 的情况（段落内嵌图 = 错误）
+   bad嵌入式 = re.findall(r'<p[^>]*>[^<]*<img[^>]*>[^<]*</p>', html_content)
+   assert not bad嵌入式, f"发现图片内嵌段落中的错误HTML（破坏段落完整性）：{bad嵌入式}，当前任务必须中止，禁止发布！"
    ```
-6. 只有校验通过才发API；校验失败立即中止，不发布
+6. 只有两项校验都通过才发API；任何一项失败立即中止，不发布
 
 ### 类目时段与文章类型强制分配表
 同一类目相邻时段不得选同一类型，原料类12种类型必须逐日轮转。
