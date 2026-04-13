@@ -247,6 +247,7 @@ approvals:
   timeout: 60
 command_allowlist:
 - recursive delete
+- git force push (rewrites remote history)
 - script execution via -e/-c flag
 quick_commands: {}
 personalities: {}

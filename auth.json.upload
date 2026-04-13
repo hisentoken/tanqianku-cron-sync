@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "providers": {
+    "openai-codex": {
+      "tokens": {
+        "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImIxZGQzZjhmLTlhYWQtNDdmZS1iMGU3LWVkYjAwOTc3N2Q2YiIsInR5cCI6IkpXVCJ9.eyJhdF9oYXNoIjoiaXo1akJDMU9obFAzWXpwWHNKaGd2USIsImF1ZCI6WyJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIl0sImF1dGhfcHJvdmlkZXIiOiJnb29nbGUiLCJhdXRoX3RpbWUiOjE3NzU5MDI5MjksImVtYWlsIjoicWl1Y2h1bnNlNzc3QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJleHAiOjE3NzU5MDY1MzEsImh0dHBzOi8vYXBpLm9wZW5haS5jb20vYXV0aCI6eyJjaGF0Z3B0X2FjY291bnRfaWQiOiJjNTg4YzY4Ny00OWUyLTQzNTEtOWJlZC04Mjg2MWE0OWFjY2YiLCJjaGF0Z3B0X3BsYW5fdHlwZSI6InBsdXMiLCJjaGF0Z3B0X3N1YnNjcmlwdGlvbl9hY3RpdmVfc3RhcnQiOiIyMDI2LTA0LTA2VDEwOjA1OjQyKzAwOjAwIiwiY2hhdGdwdF9zdWJzY3JpcHRpb25fYWN0aXZlX3VudGlsIjoiMjAyNi0wNS0wNlQxMDowNTo0MSswMDowMCIsImNoYXRncHRfc3Vic2NyaXB0aW9uX2xhc3RfY2hlY2tlZCI6IjIwMjYtMDQtMTFUMTA6MjI6MDkuMzIxNDg3KzAwOjAwIiwiY2hhdGdwdF91c2VyX2lkIjoidXNlci10bHRaSmhrVFo1TkJHNmtOOWJEMHgxWk8iLCJncm91cHMiOltdLCJsb2NhbGhvc3QiOnRydWUsIm9yZ2FuaXphdGlvbnMiOlt7ImlkIjoib3JnLTFwd2t6ZW9lamRYNXJrYUVXdEJCZzJYNiIsImlzX2RlZmF1bHQiOnRydWUsInJvbGUiOiJvd25lciIsInRpdGxlIjoiUGVyc29uYWwifV0sInVzZXJfaWQiOiJ1c2VyLXRsdFpKaGtUWjVOQkc2a045YkQweDFaTyJ9LCJpYXQiOjE3NzU5MDI5MzEsImlzcyI6Imh0dHBzOi8vYXV0aC5vcGVuYWkuY29tIiwianRpIjoiYjJmNTFiZTctYTJmNy00OWZlLWE3OGEtOTRkZWVjYzM1NjAzIiwibmFtZSI6IumCseaYpeiJsiIsInJhdCI6MTc3NTkwMjkxNSwic2lkIjoiYWJiMjZlMzQtZjAwNC00YjE5LWFmNGYtY2FmMzY2YmQyODhkIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDgwODI5MTk3MDg5MjY2NjQ2MzkifQ.ETRK5rwRzWJEJ93VLQjLVOeBVz3GcI-YLzA7dg_2-7qalRszGxG21kLZKl_NxfOhnce4XwWo5Rikz6QQ1TRGOEVMCTklaWWEMuGVAasZW7kf439OjZj5hk_CpQPiFdxiDpmlnA848L4vlHxGUblI4sNIlPXbetrA2Nt5zLNK_nuz9i_By16fjh0hELZBWz0UcCKGYaaepJrI1iF04p3cogBcHd_flg43XsN0VUMvW5cPWgxRxWk1ngJX98_dZB2jtwXtWY-rcTwE3kEDl1Kgm97fcKCa1lfRw1JXBWkWHVLOHQaFLxYYMxPg9s-fohXQMAh5voj0geebosNiQFPBqhAhMdT5Mx4vX_ZGY-SJeKOrj8qZ554KnpoNWRN53auP_9nmzwCfx2tt34Zf1vdKo1b5Infzi9mPcG-Af2fOVmseRI2flGxBS_QWWrOKZq2pjM6z95TwE-1MyBlbsRk4OVcwYZ5oL7os7Ody5N4lwhXOv4ezNNiME_KPr-Ta3gOMasPhXjBXeb7t1XMMF0rfZi3E4mDUgVJxLl0I1uEKR2tZwfXmG267ROiNUsWH4ZGk4hSUjs7VckcLivAGoQB4bm5FEbHW7zhohlilo-M1NI09E5bw0bBoCTaB5D2-XmdxsyloTgiv01bEwq2y1YzQyNhAfRpBn8bmNSrkAmUIUuk",
+        "access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIiwiZXhwIjoxNzc2NzY2OTMyLCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiY2hhdGdwdF9hY2NvdW50X2lkIjoiYzU4OGM2ODctNDllMi00MzUxLTliZWQtODI4NjFhNDlhY2NmIiwiY2hhdGdwdF9hY2NvdW50X3VzZXJfaWQiOiJ1c2VyLXRsdFpKaGtUWjVOQkc2a045YkQweDFaT19fYzU4OGM2ODctNDllMi00MzUxLTliZWQtODI4NjFhNDlhY2NmIiwiY2hhdGdwdF9jb21wdXRlX3Jlc2lkZW5jeSI6Im5vX2NvbnN0cmFpbnQiLCJjaGF0Z3B0X3BsYW5fdHlwZSI6InBsdXMiLCJjaGF0Z3B0X3VzZXJfaWQiOiJ1c2VyLXRsdFpKaGtUWjVOQkc2a045YkQweDFaTyIsImxvY2FsaG9zdCI6dHJ1ZSwidXNlcl9pZCI6InVzZXItdGx0Wkpoa1RaNU5CRzZrTjliRDB4MVpPIn0sImh0dHBzOi8vYXBpLm9wZW5haS5jb20vcHJvZmlsZSI6eyJlbWFpbCI6InFpdWNodW5zZTc3N0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTc3NTkwMjkzMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiIxMTZmNDVlOC05NjAzLTRlM2EtYWM0Yy1mNzgxYzRlYzM5YmIiLCJuYmYiOjE3NzU5MDI5MzEsInB3ZF9hdXRoX3RpbWUiOjE3NzU5MDI5MjkzMjEsInNjcCI6WyJvcGVuaWQiLCJwcm9maWxlIiwiZW1haWwiLCJvZmZsaW5lX2FjY2VzcyIsImFwaS5jb25uZWN0b3JzLnJlYWQiLCJhcGkuY29ubmVjdG9ycy5pbnZva2UiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzX1Z2TTZQNWZmM05uUmNvY3lpVW14S1Z1YSIsInNsIjp0cnVlLCJzdWIiOiJnb29nbGUtb2F1dGgyfDEwODA4MjkxOTcwODkyNjY2NDYzOSJ9.xyngDUruCQ8JKeJxBFLFmyjPu3lfrJmtmvdPiD7fJyYlPrD2rWxbsFc6-1n4kKiEMCQjjGlPpQ4dM8ZUNDwDvy8cRamXRQr1pLdWvw-muXBmDd4gRXVMdzUwv02fF7YwdbwdwfZnWumSyxbSsOF6zO4RiTLcn8nXeI63-HbUNR0YNZSmTB-0HGIG4evCeynm5DvyVzWAgrGYoNrjytkUMEUNRJJ5ZM0LpAQCqPbKqO3wDKQWGG_0mqsom2sdtxGrfg4JagKhLtEW_C0Kh6z1Y8AVHNtFl6JuiD8ecS3VlWIGhSYxh_p9TXaXwGE5qzrGNJ1fQgsS9oJ6WsyQ0GSEMVrj-HQ6SkqHMJtBXH09y78kxd7WjnBNwhtSEL6F7XeOAt6AqsGOWm1MxCevtxNpsymF9VXO5akxR7lDTeyJ2ZKaQDk0AbLO9ru5I1op8LhNYxLVKhVe9ivJjLeWgoGDrJdRTmNSTkjv1JG1UQnPW2Hr7PKiSdIVPWV5IZ6pFTKuJoeQnaelrJ2ONXmn8jL5i5ufb8LUhjwF14Tl9Et5pFSuhetD88qzC4mAdPDc9gmGH_ymrhpKgsHqIBiXoSGtjJx93S5NxBD_RR3UU7gGMXF_cPrW_IOqBtTC0SYVYsrgroZuoafXbvQHr_Udkr6huaoqhIXtjLzmnPh_Oia1weQ",
+        "refresh_token": "rt_0629s3t0trSvRFMmCH_3CGqsnmaHWeHR_kHOPTgV9sg.8pDXgLyopXlSK1-CynAOXw5hqRMi_WBk91TzD1_k0SA",
+        "account_id": "c588c687-49e2-4351-9bed-82861a49accf"
+      },
+      "last_refresh": "2026-04-13T06:04:41.639345Z",
+      "auth_mode": "chatgpt"
+    }
+  },
+  "active_provider": "openai-codex",
+  "updated_at": "2026-04-13T06:04:41.645629+00:00",
+  "credential_pool": {
+    "minimax-cn": [
+      {
+        "id": "1b59f2",
+        "label": "MINIMAX_CN_API_KEY",
+        "auth_type": "api_key",
+        "priority": 0,
+        "source": "env:MINIMAX_CN_API_KEY",
+        "access_token": "sk-cp-OBJYTXCbg4PQS6gO0Col8fT_cEgZY2Ur_6qhB-bWDAqiuFkciSntwIM0U26E-8HrqoqNRbcp8sgdCksRsQTmSoe-PnltkGuNbsE6xxDByKB-Yqr2nNfWNik",
+        "last_status": null,
+        "last_status_at": null,
+        "last_error_code": null,
+        "last_error_reason": null,
+        "last_error_message": null,
+        "last_error_reset_at": null,
+        "base_url": "https://api.minimaxi.com/anthropic",
+        "request_count": 0
+      }
+    ],
+    "openai-codex": [
+      {
+        "id": "3fc06a",
+        "label": "device_code",
+        "auth_type": "oauth",
+        "priority": 0,
+        "source": "device_code",
+        "access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIiwiZXhwIjoxNzc2NzY2OTMyLCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiY2hhdGdwdF9hY2NvdW50X2lkIjoiYzU4OGM2ODctNDllMi00MzUxLTliZWQtODI4NjFhNDlhY2NmIiwiY2hhdGdwdF9hY2NvdW50X3VzZXJfaWQiOiJ1c2VyLXRsdFpKaGtUWjVOQkc2a045YkQweDFaT19fYzU4OGM2ODctNDllMi00MzUxLTliZWQtODI4NjFhNDlhY2NmIiwiY2hhdGdwdF9jb21wdXRlX3Jlc2lkZW5jeSI6Im5vX2NvbnN0cmFpbnQiLCJjaGF0Z3B0X3BsYW5fdHlwZSI6InBsdXMiLCJjaGF0Z3B0X3VzZXJfaWQiOiJ1c2VyLXRsdFpKaGtUWjVOQkc2a045YkQweDFaTyIsImxvY2FsaG9zdCI6dHJ1ZSwidXNlcl9pZCI6InVzZXItdGx0Wkpoa1RaNU5CRzZrTjliRDB4MVpPIn0sImh0dHBzOi8vYXBpLm9wZW5haS5jb20vcHJvZmlsZSI6eyJlbWFpbCI6InFpdWNodW5zZTc3N0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTc3NTkwMjkzMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiIxMTZmNDVlOC05NjAzLTRlM2EtYWM0Yy1mNzgxYzRlYzM5YmIiLCJuYmYiOjE3NzU5MDI5MzEsInB3ZF9hdXRoX3RpbWUiOjE3NzU5MDI5MjkzMjEsInNjcCI6WyJvcGVuaWQiLCJwcm9maWxlIiwiZW1haWwiLCJvZmZsaW5lX2FjY2VzcyIsImFwaS5jb25uZWN0b3JzLnJlYWQiLCJhcGkuY29ubmVjdG9ycy5pbnZva2UiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzX1Z2TTZQNWZmM05uUmNvY3lpVW14S1Z1YSIsInNsIjp0cnVlLCJzdWIiOiJnb29nbGUtb2F1dGgyfDEwODA4MjkxOTcwODkyNjY2NDYzOSJ9.xyngDUruCQ8JKeJxBFLFmyjPu3lfrJmtmvdPiD7fJyYlPrD2rWxbsFc6-1n4kKiEMCQjjGlPpQ4dM8ZUNDwDvy8cRamXRQr1pLdWvw-muXBmDd4gRXVMdzUwv02fF7YwdbwdwfZnWumSyxbSsOF6zO4RiTLcn8nXeI63-HbUNR0YNZSmTB-0HGIG4evCeynm5DvyVzWAgrGYoNrjytkUMEUNRJJ5ZM0LpAQCqPbKqO3wDKQWGG_0mqsom2sdtxGrfg4JagKhLtEW_C0Kh6z1Y8AVHNtFl6JuiD8ecS3VlWIGhSYxh_p9TXaXwGE5qzrGNJ1fQgsS9oJ6WsyQ0GSEMVrj-HQ6SkqHMJtBXH09y78kxd7WjnBNwhtSEL6F7XeOAt6AqsGOWm1MxCevtxNpsymF9VXO5akxR7lDTeyJ2ZKaQDk0AbLO9ru5I1op8LhNYxLVKhVe9ivJjLeWgoGDrJdRTmNSTkjv1JG1UQnPW2Hr7PKiSdIVPWV5IZ6pFTKuJoeQnaelrJ2ONXmn8jL5i5ufb8LUhjwF14Tl9Et5pFSuhetD88qzC4mAdPDc9gmGH_ymrhpKgsHqIBiXoSGtjJx93S5NxBD_RR3UU7gGMXF_cPrW_IOqBtTC0SYVYsrgroZuoafXbvQHr_Udkr6huaoqhIXtjLzmnPh_Oia1weQ",
+        "refresh_token": "rt_0629s3t0trSvRFMmCH_3CGqsnmaHWeHR_kHOPTgV9sg.8pDXgLyopXlSK1-CynAOXw5hqRMi_WBk91TzD1_k0SA",
+        "last_status": null,
+        "last_status_at": null,
+        "last_error_code": null,
+        "last_error_reason": null,
+        "last_error_message": null,
+        "last_error_reset_at": null,
+        "base_url": "https://chatgpt.com/backend-api/codex",
+        "last_refresh": "2026-04-13T06:04:41.639345Z",
+        "request_count": 0
+      }
+    ]
+  }
+}
