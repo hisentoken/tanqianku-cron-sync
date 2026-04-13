@@ -1,0 +1,162 @@
+纺织坯布全域本体知识库 V3.0 (AI 智能体增强版)
+
+0. 制造工艺大类 (Macro Manufacturing Processes)
+梭织 (Woven)： 经纬纱垂直交织。结构稳定，抗撕裂性强。
+
+针织 (Knitted)： 纱线弯曲成圈串套。高弹、透气、贴身。
+
+非织造/无纺 (Non-woven)： 纤维物理/化学粘合（如水刺、纺粘、针刺、熔喷）。
+
+➕ 复合与特种成型 (Composite & Special)： 缝编布 (Stitch-bonded)、簇绒底布 (Tufting base)、3D立体编织。
+
+1. 材质、纤维与纱线形态维度 (Material & Yarn Morphology)
+天然纤维： 全棉、亚麻、苎麻、汉麻、真丝、全毛、➕ 羊绒 (Cashmere)、马海毛。
+
+化学纤维： 全涤 (涤纶)、锦纶 (尼龙)、腈纶、氨纶。➕ 特种高分子：芳纶 (Kevlar/Nomex)、超高分子量聚乙烯 (UHMWPE)、碳纤维。
+
+再生纤维： 人棉 (粘胶)、天丝、莫代尔、铜氨、醋酸纤维。➕ 再生环保纤维：RPET (再生涤纶)。
+
+混纺与交织： 涤棉、锦棉、涤粘、麻棉、棉氨。➕ 导电丝交织 (防静电坯布)、银离子混纺。
+
+➕ 纱线形态 (Yarn Type - 决定布面质感)：
+
+长丝 (Filament)：FDY (全牵伸丝)、DTY (加弹丝)、POY (预取向丝)。
+
+短纤 (Spun)：环锭纺、气流纺 (OE)、涡流纺 (MVS)。
+
+花式纱：竹节纱 (Slub)、雪尼尔纱、段染纱。
+
+2. 组织与织法细分维度 (Structure Details)
+梭织基础与变化： 平纹、斜纹、缎纹。变化：提花、小提花、双层布、蜂巢、灯芯绒、泡泡纱、绉组织、剪花布。➕ 防刮格 (Ripstop)、牛津点阵。
+
+针织纬编 (Weft Knitting)： 汗布、珠地网眼、卫衣布、罗纹、双面布、空气层。➕ 罗马布 (Ponte Roma)、华夫格 (Waffle)、拉绒底布。
+
+针织经编 (Warp Knitting)： 经编平布、拉舍尔、网眼/蕾丝底布、金光绒底布。➕ 3D三明治网布 (Spacer fabric)、超柔短毛绒底布。
+
+3. 核心规格与高阶参数 (Advanced Technical Specifications)
+纱线参数： 支数 (S)、旦尼尔 (D)。➕ 捻度 (Twist/TPM：强捻、弱捻)、特克斯 (Tex)。
+
+几何参数： 梭织密度 (如133x72)、针织机号 (如28G)、克重 (gsm)、幅宽 (cm/inch)。➕ 厚度 (Thickness, 毫米级)。
+
+➕ 物理性能指标 (Physical Properties - 决定工业用途)：
+
+断裂强力 (Tensile strength)、撕破强力 (Tearing strength)。
+
+弹力延伸率 (Stretch rate) 与 回复率 (Recovery rate)。
+
+缩水率预估范围 (Shrinkage allowance)。
+
+4. 终端应用与后整理潜力 (End-Use & Finishing Potential)
+常规应用： 服装面料 (衬衫、工装、牛仔等)、家纺布艺、工业与辅料。
+
+➕ 高能级应用场景：
+
+户外战术：冲锋衣复合底布、帐篷底布、降落伞基布。
+
+智能穿戴：柔性传感基布、发热服基布。
+
+➕ 后整理潜力标签 (Finishing Capability - 供AI判断加工可行性)：
+
+可染性：活性染料适用 (棉/纤维素)、分散染料适用 (涤纶)、酸性染料适用 (锦纶/羊毛)。
+
+物理加工：适宜起毛/抓绒、适宜磨毛、适宜压花。
+
+化学涂层：适宜PU/PA涂层、适宜特氟龙三防 (防水防油防污) 处理。
+
+5. 商业、供应链与合规认证 (Commercial, Supply Chain & Compliance)
+交易与产能： 现货、定织、尾货。➕ 起订量阈值 (MOQ：如 3000米/缸)、标准交期 (Lead Time：如 15-20天)、日产能 (Daily Capacity)。
+
+质量与出厂状态： 美标四分制、原色坯、半漂坯。➕ 坯布包装方式 (卷装/Roll、折叠/Fold、蛇皮袋打包)。
+
+➕ 合规与可持续认证 (Certifications - 国际买家核心筛选项)：
+
+环保与再生：GRS (全球回收标准)、RCS、Oeko-Tex 100。
+
+天然与有机：GOTS (全球有机纺织品标准)、BCI (良好棉花)。
+
+核心产业带： 南通 (家纺)、柯桥 (全品类)、盛泽 (化纤)、兰溪 (棉织)、西樵 (牛仔)、张槎 (针织)、长乐 (经编)。➕ 常熟 (防寒服面料/珊瑚绒)、海宁 (经编氨纶/植绒)。
+
+6. 视觉感知与触感量化维度 (Sensory & Computer Vision Mapping)专供 AI 将人类主观感受转化为可计算的物理参数：触感映射 (Haptic Mapping)：“软糯 / 亲肤” $\rightarrow$ 映射：微丝化纤、莫代尔、天丝、低支数高密、磨毛/抓绒整理。“骨感 / 挺括” $\rightarrow$ 映射：高支高密纯棉、亚麻混纺、涤纶加捻纱 (强捻)、双层组织。“垂坠感 (Drape)” $\rightarrow$ 映射：粘胶 (人棉)、真丝、醋酸、高克重针织罗马布。视觉光泽 (Visual Luster)： 哑光 (消光纱/全消光FDY)、微光 (半消光纱)、丝光 (烧毛+丝光棉)、金属光泽 (金银丝交织)。表面肌理 (Texture CV Features)： 绉效应 (通过强捻纱收缩产生)、竹节效应 (经/纬向粗细不匀)、杂纱黑点 (亚麻原胚特征或棉籽壳留存)。7. 动态成本与定价因子 (Dynamic Costing & Pricing Factors)专供 AI 智能体进行“BOM成本估算”与“目标价位逆向匹配”：原料成本因子： 实时纱价 (如：CNY/吨)、纤维公定回潮率 (影响实际计重)。织造工费因子： 纬密 (纬密越高，机台产量越低，工费越贵)、织机类型 (剑杆工费 > 喷气 > 喷水)、门幅利用率。损耗率定值 (Loss Rate)： 织造缩率 (Weaving shrinkage)、边纱损耗、次品率冗余 (通常3%-5%)。8. ESG与数字化追溯 (ESG & Digital Traceability)应对欧美市场绿色壁垒，供 AI 进行合规拦截：碳排放强度 (Carbon Footprint)： 低碳 (再生纤维/原液着色)、高碳 (常规高能耗化纤)。水资源消耗 (Water Consumption)： 节水工艺 (如：冷轧批预处理潜力)、高耗水。供应链溯源节点： 纺纱厂溯源码 $\rightarrow$ 织造厂批次号 $\rightarrow$ 物理防伪标记 (如：DNA示踪纤维、隐形荧光纱线)。
+
+9. 典型终端产品与坯布SKU逆向映射库 (End-Product to Greige Mapping)
+A. 高级服饰与快时尚产品 (Premium Apparel & Fast Fashion)
+高定/商务衬衫 (Premium Business Shirts)：
+
+AI 映射坯布： 80S / 100S / 120S 双股全棉纱线，高密平纹或府绸，要求美标四分制 A 级。
+
+隐性要求： 面料需具备“骨感”和优良的抗皱潜力（可能需液氨免烫整理）。
+
+瑜伽服 / 紧身运动裤 (Yoga Wear / Activewear)：
+
+AI 映射坯布： 锦纶/氨纶 (Nylon/Spandex) 裸感双面针织布 (Interlock)。
+
+关键参数限制： 针距需极高（如 32G 或 36G 防透肉），氨纶比例要求高（20%-25%），高弹力延伸率与极佳回复率。
+
+秋冬羽绒服外壳 (Down Jacket Shells)：
+
+AI 映射坯布： 15D / 20D / 40D 全涤或全锦平纹布（如 塔夫绸、春亚纺）。
+
+关键参数限制： 极高密度（如 380T、400T 以上）以满足“防绒性”，后整理需适配压光 (Cire) 或 防绒涂层。
+
+垂感阔腿裤 / 高级女装连衣裙 (Drapey Trousers / Dresses)：
+
+AI 映射坯布： 人棉 (Viscose)、天丝 (Tencel) 或 醋酸纤维 (Acetate) 的斜纹、缎纹梭织布；或涤纶高克重罗马布 (Ponte Roma)。
+
+视觉/触感映射： 高垂坠感、微光泽、软糯。
+
+B. 户外战术与功能性产品 (Outdoor & Tactical Gear)
+硬壳冲锋衣 (Hard-Shell Jackets)：
+
+AI 映射坯布： 锦纶防刮格 (Nylon Ripstop)，通常使用 70D-210D 锦纶丝。
+
+隐性要求： 具备极高的撕破强力，表面平整度需极高，以确保后续贴 ePTFE 防水透气膜时不起泡。
+
+战术背包 / 军警防护装备 (Tactical Backpacks/Vests)：
+
+AI 映射坯布： 500D / 1000D 锦纶牛津布 (类似 Cordura 规格)，或超高分子量聚乙烯 (UHMWPE) 交织布。
+
+隐性要求： 极端的耐磨指数和断裂强力，可能需具备红外伪装印花潜力。
+
+夏季防晒衣 (Sun Protection Clothing)：
+
+AI 映射坯布： 极细旦 (15D/20D) 锦纶或涤纶平纹布，或轻薄透气针织网眼。
+
+功能映射： 纱线需带有抗UV（防紫外线）粉体，或布面适宜做抗紫外线涂层。
+
+C. 家纺布艺与室内软装 (Home Textiles & Upholstery)
+五星级酒店床品 (5-Star Hotel Bedding)：
+
+AI 映射坯布： 60S / 80S 全棉贡缎 (Cotton Satin) 或 提花布 (Jacquard)。
+
+关键参数限制： 必须是特宽幅（通常要求 280cm、300cm 或 320cm），全精梳纱，无横条疵点。
+
+全遮光窗帘布 (100% Blackout Curtains)：
+
+AI 映射坯布： 三层梭织黑丝遮光布（中间夹织黑纱），或适宜做发泡涂层的平纹底布。
+
+隐性要求： 宽幅（280cm），克重较高，需具备较好的垂感。
+
+“科技布”沙发面料 (Smart Fabric / Faux Leather Upholstery)：
+
+AI 映射坯布： 涤纶超细纤维仿皮绒底布，或高克重经编起绒底布。
+
+后整理映射： 需能承受重度压花、烫金、水洗及三防（防水防污防油）处理。
+
+D. 产业用特种产品 (Industrial & Technical Textiles)
+医疗防护服 / 高级手术衣 (Medical PPE)：
+
+AI 映射坯布： SMS/SMMS 无纺布，或涤纶导电丝交织的高密平纹布（需含 1%碳纤维导电丝）。
+
+隐性要求： 防静电、耐高温高压消毒、防血穿透。
+
+汽车安全气囊 (Automotive Airbags)：
+
+AI 映射坯布： 420D / 840D 锦纶66 (Nylon 66) 高密平纹布。
+
+关键参数限制： 极其苛刻的强力要求、耐高温熔融性能，必须符合汽车行业的 IATF 16949 质量体系认证。
+
+运动鞋面网布 (Sneaker Upper Mesh)：
+
+AI 映射坯布： 涤纶或锦纶的 3D 三明治经编网布 (Spacer Mesh)，或一体飞织鞋面。
+
+隐性要求： 极佳的透气性、抗拉伸变形能力以及耐曲折性。
