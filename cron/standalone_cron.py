@@ -40,8 +40,8 @@ def tick_once():
         logger.debug("Tick at %s", _now())
         # tick returns number of jobs that ran
         result = tick(verbose=False)
-        if result and result.get("jobs_run", 0) > 0:
-            logger.info("Jobs run: %d", result["jobs_run"])
+        if result and result > 0:
+            logger.info("Jobs run: %d", result)
         return result
     except Exception as e:
         logger.error("Tick error: %s", e)

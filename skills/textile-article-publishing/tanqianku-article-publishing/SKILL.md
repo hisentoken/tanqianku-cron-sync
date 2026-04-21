@@ -104,3 +104,33 @@ Authorization: Bearer sk-cp-OBJYTXCbg4PQS6gO0Col8fT_cEgZY2Ur_6qhB-bWDAqiuFkciSnt
 - [ ] 有base64图片（无图不发布）
 - [ ] 图片base64+内容总体积<450KB
 - [ ] 标题与已发布文章不重复
+
+
+---
+
+## 经验记录
+
+### Markdown代码围栏混入正文bug（2026-04-18）
+
+**问题**：LLM生成的HTML内容里出现 ```html 代码围栏标记，导致文章中出现"```html"等markdown语法残留在正文里。
+
+**根因**：LLM在生成HTML内容片段时，会在输出中包含```html围栏标记（常见做法），当这些内容被拼接到article_html变量后，围栏标记就混入了最终HTML。
+
+**修复方案**：在gen_img_and_build_html()调用前，做全局清理 + 断言验证：
+```python
+article_html = "你的HTML内容（含[插图]占位符）"
+        # 清理LLM输出中的markdown代码围栏，防止```html混入正文
+# 关键：必须删整个围栏块，不能只删标记不删内容（用[\s\S]*?匹配跨行内容）
+        article_html = re.sub(r'```html[\s\S]*?```', '', article_html)
+        article_html = re.sub(r'```[\s\S]*?```', '', article_html)
+        assert '```' not in article_html, '清理后仍含代码围栏，当前任务中止！'
+img_prompt_english = "英文图生prompt（16:9纯视觉场景，无文字）"
+img_save_dir = "/home/tanqianku/.hermes/cron/output/images/"
+final_html = gen_img_and_build_html(img_prompt_english, article_html, img_save_dir)
+```
+
+**关键**：必须用全局 `re.sub(r'```html', ...)` 和 `re.sub(r'```', ...)` 而不是只去头尾。断言确保清理彻底。
+
+**jobs.json重建时**：必须将上方完整片段原样复制进prompt，不得省略或简化。
+
+**JSON嵌入Python的缩进陷阱（2026-04-18血泪）**：prompt里的Python代码是JSON字符串，缩进用0层级（顶格），因为外层有```python markdown围栏包裹，不是真正的函数体内。不要加8空格缩进，否则代码在```python块里会变成函数内嵌而非顶层语句。
