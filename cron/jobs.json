@@ -1789,21 +1789,21 @@
       "schedule_display": "0 * * * *",
       "repeat": {
         "times": 999,
-        "completed": 1
+        "completed": 2
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-21T14:19:08.192634+08:00",
-      "next_run_at": "2026-04-21T17:00:00+08:00",
-      "last_run_at": "2026-04-21T15:03:42.271687+08:00",
+      "next_run_at": "2026-04-21T18:00:00+08:00",
+      "last_run_at": "2026-04-21T16:00:35.606205+08:00",
       "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": "delivery error: Telegram send failed: httpx.ConnectError: ",
+      "last_delivery_error": null,
       "deliver": "telegram:8777604360",
       "origin": null
     }
   ],
-  "updated_at": "2026-04-21T16:00:19.197947+08:00"
+  "updated_at": "2026-04-21T17:00:36.530270+08:00"
 }
