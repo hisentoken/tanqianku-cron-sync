@@ -1783,21 +1783,21 @@
       "script": null,
       "schedule": {
         "kind": "cron",
-        "expr": "0 * * * *",
-        "display": "0 * * * *"
+        "expr": "0 12 */2 * *",
+        "display": "0 12 */2 * *"
       },
-      "schedule_display": "0 * * * *",
+      "schedule_display": "0 12 */2 * *",
       "repeat": {
         "times": 999,
-        "completed": 3
+        "completed": 4
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-21T14:19:08.192634+08:00",
-      "next_run_at": "2026-04-21T19:00:00+08:00",
-      "last_run_at": "2026-04-21T17:02:13.765030+08:00",
+      "next_run_at": "2026-04-23T12:00:00+08:00",
+      "last_run_at": "2026-04-21T18:00:54.677177+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -1805,5 +1805,5 @@
       "origin": null
     }
   ],
-  "updated_at": "2026-04-21T18:00:39.115134+08:00"
+  "updated_at": "2026-04-21T18:09:24.148244+08:00"
 }
