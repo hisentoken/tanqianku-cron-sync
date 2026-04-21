@@ -161,6 +161,61 @@
       "identity": "采购主管视角",
       "h2_count": 0,
       "_h2_missing": true
+    },
+    {
+      "title": "服装采购商必知：缝纫线怎么选？从支数到供应商，7大维度选型实战指南与成本测算",
+      "topic_keywords": [
+        "缝纫线",
+        "选型",
+        "7维度",
+        "服装采购"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-21T15:13:14.055591",
+      "h2_count": 4,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "嘉兴纽扣到底值不值得拿货？三大品类两大产区真实测评2026采购老手说完实话",
+      "topic_keywords": [
+        "嘉兴纽扣",
+        "辅料",
+        "采购"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-21T15:21:58.582800",
+      "h2_count": 4,
+      "identity": "采购主管视角"
+    },
+    {
+      "title": "泡沫整理技术三年内渗透率能否突破30%？环保压力下的工艺替代窗口与实操指南",
+      "topic_keywords": [
+        "泡沫整理",
+        "环保工艺",
+        "染整改造"
+      ],
+      "slug": "tanjia",
+      "category": "探价",
+      "published_at": "2026-04-21T15:27:31.851117",
+      "h2_count": 5,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "Bluesign认证成跨境订单敲门砖：出口纺企最关心的6个实操问题一次性说清楚",
+      "topic_keywords": [
+        "Bluesign",
+        "GRS",
+        "Oeko-Tex",
+        "环保认证",
+        "跨境电商"
+      ],
+      "slug": "tanjia",
+      "category": "探价",
+      "published_at": "2026-04-21T15:48:58.395193",
+      "h2_count": 5,
+      "identity": "跟单员视角"
     }
   ]
 }

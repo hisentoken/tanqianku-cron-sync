@@ -104,14 +104,14 @@
         "textile-article-publishing"
       ],
       "provider": "minimax-cn",
-      "next_run_at": "2026-04-21T15:43:00+08:00",
+      "next_run_at": "2026-04-22T15:43:00+08:00",
       "category": "\u63a2\u4ef7",
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "skill": "textile-article-publishing",
-      "last_run_at": "2026-04-20T15:50:25.113818+08:00",
+      "last_run_at": "2026-04-21T15:49:18.991905+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null
@@ -511,9 +511,9 @@
         "textile-article-publishing"
       ],
       "provider": "minimax-cn",
-      "next_run_at": "2026-04-21T15:19:00+08:00",
+      "next_run_at": "2026-04-22T15:19:00+08:00",
       "category": "\u63a2\u4ef7",
-      "last_run_at": "2026-04-20T15:29:27.663491+08:00",
+      "last_run_at": "2026-04-21T15:27:45.042290+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -580,9 +580,9 @@
         "textile-article-publishing"
       ],
       "provider": "minimax-cn",
-      "next_run_at": "2026-04-21T15:06:00+08:00",
+      "next_run_at": "2026-04-22T15:06:00+08:00",
       "category": "\u63a2\u8d27",
-      "last_run_at": "2026-04-20T15:12:42.490714+08:00",
+      "last_run_at": "2026-04-21T15:13:29.926967+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -674,9 +674,9 @@
         "textile-article-publishing"
       ],
       "provider": "minimax-cn",
-      "next_run_at": "2026-04-21T15:16:00+08:00",
+      "next_run_at": "2026-04-22T15:16:00+08:00",
       "category": "\u63a2\u8d27",
-      "last_run_at": "2026-04-20T15:21:26.080018+08:00",
+      "last_run_at": "2026-04-21T15:22:12.546951+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -1789,21 +1789,21 @@
       "schedule_display": "0 * * * *",
       "repeat": {
         "times": 999,
-        "completed": 0
+        "completed": 1
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-21T14:19:08.192634+08:00",
-      "next_run_at": "2026-04-21T16:00:00+08:00",
-      "last_run_at": null,
-      "last_status": null,
+      "next_run_at": "2026-04-21T17:00:00+08:00",
+      "last_run_at": "2026-04-21T15:03:42.271687+08:00",
+      "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": null,
+      "last_delivery_error": "delivery error: Telegram send failed: httpx.ConnectError: ",
       "deliver": "telegram:8777604360",
       "origin": null
     }
   ],
-  "updated_at": "2026-04-21T15:00:34.929969+08:00"
+  "updated_at": "2026-04-21T16:00:19.197947+08:00"
 }
