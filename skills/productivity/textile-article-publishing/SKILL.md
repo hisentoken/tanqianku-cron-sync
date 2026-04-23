@@ -1,7 +1,10 @@
 ---
 name: textile-article-publishing
 description: 纺织全域内容发布系统，共67个任务（66个发布+1个采集）。标签体系：探价(tanjia)=原料/坯布，探货(tanhuo)=辅料/布行/内衣/家居，探单(tandan)=服装/电商，探路(tanlu)=招商/活动/营销类。
-version: 5.20.0
+version: 5.21.0
+---
+
+NOTE: 调试方法论移至 skill textile-cron-debugging（手动触发、试点验证、jobs.json结构、故障排查）。
 ---
 
 ### 10. write_recent 未在 jobs.json 中调用 = h2_count=0 根因（2026-04-21发现）
