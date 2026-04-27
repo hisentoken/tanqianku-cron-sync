@@ -1535,7 +1535,7 @@
       "slug": "tanhuo",
       "category": "探货",
       "published_at": "2026-04-23T18:09:17.667654",
-      "h2_count": 0,
+      "h2_count": 4,
       "identity": "档口老板视角"
     },
     {
@@ -2210,6 +2210,824 @@
       "published_at": "2026-04-25T11:21:34.454569",
       "h2_count": 4,
       "identity": "验货跟单视角"
+    },
+    {
+      "title": "桃皮绒和麂皮绒到底差在哪、怎么选：采购经理必读的绒类面料鉴别指南与坯布成本核算逻辑",
+      "topic_keywords": [
+        "桃皮绒",
+        "麂皮绒",
+        "坯布鉴别",
+        "采购成本"
+      ],
+      "slug": "tanjia",
+      "category": "探价",
+      "published_at": "2026-04-25T13:23:54.333733",
+      "h2_count": 5,
+      "identity": "采购主管视角"
+    },
+    {
+      "title": "工程地毯采购价格相差三倍但长期成本却反转：阻燃等级与持有成本到底怎么算",
+      "topic_keywords": [
+        "工程地毯",
+        "阻燃认证",
+        "持有成本",
+        "尼龙6",
+        "尼龙66",
+        "酒店",
+        "办公",
+        "医院",
+        "学校"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-25T13:32:20.506752",
+      "h2_count": 6,
+      "identity": "采购经理视角"
+    },
+    {
+      "title": "银离子抗菌内裤价格相差五倍到底差在哪：认证体系与2026年采购指南全解析",
+      "topic_keywords": [
+        "银离子抗菌",
+        "内裤",
+        "GB/T 20944",
+        "FZ/T 73023",
+        "OEKO-TEX"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-25T13:52:25.145453",
+      "h2_count": 4,
+      "identity": "采购主管视角",
+      "article_id": 927
+    },
+    {
+      "title": "PVC地板卷材和橡胶地板差在哪：工业地材采购老板必须搞清的三维对比与成本实测",
+      "topic_keywords": [
+        "PVC地板",
+        "橡胶地板",
+        "工业地材",
+        "阻燃",
+        "耐腐蚀"
+      ],
+      "slug": "tanjia",
+      "category": "探价",
+      "published_at": "2026-04-25T14:16:00.579610",
+      "h2_count": 6,
+      "identity": "市场分析师视角"
+    },
+    {
+      "title": "涤纶长丝连涨3日，坯布跟涨幅度与布行拿货窗口期实战：采购策略与成本控制全解析",
+      "topic_keywords": [
+        "涤纶涨价",
+        "坯布拿货",
+        "采购策略"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-25T15:19:27.126547",
+      "h2_count": 5,
+      "identity": "工厂业务员视角"
+    },
+    {
+      "title": "无缝针织内衣工厂鉴别与OEM代工选择：广州/汕头/晋江三地供应商实地评估维度",
+      "topic_keywords": [
+        "无缝针织",
+        "OEM代工",
+        "内衣工厂鉴别",
+        "汕头",
+        "晋江"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-25T15:23:26.571938",
+      "h2_count": 5,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "南通家纺城产能分化真相：电商订单激增40%背后，三类工厂的生存现状与采购风险",
+      "topic_keywords": [
+        "南通家纺城",
+        "电商订单",
+        "产能分化",
+        "工厂动态"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-25T15:48:08.309162",
+      "h2_count": 4,
+      "identity": "工厂业务员视角"
+    },
+    {
+      "title": "消光四面弹坯布价格涨1元/米也抢着要：采购必知的质量鉴别方法与行业避坑实战指南",
+      "topic_keywords": [
+        "消光四面弹",
+        "坯布验收",
+        "质量鉴别",
+        "采购避坑"
+      ],
+      "slug": "tanjia",
+      "category": "探价",
+      "published_at": "2026-04-25T15:52:54.421704",
+      "h2_count": 3,
+      "identity": "采购主管视角"
+    },
+    {
+      "title": "出口服装GRS/Oeko-Tex认证到底怎么拿？电商卖家拿货必须核实的认证清单与避坑指南",
+      "topic_keywords": [],
+      "slug": "tandan",
+      "category": "探单",
+      "published_at": "2026-04-25T16:12:54.091704",
+      "h2_count": 5,
+      "identity": "档口老板视角"
+    },
+    {
+      "title": "纸管和纸箱到底占多少成本纺织包装辅料行业揭秘与采购避坑实战指南全攻略",
+      "topic_keywords": [
+        "纸管",
+        "纸箱",
+        "包装辅料",
+        "成本"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-25T16:26:03.456779",
+      "h2_count": 4,
+      "identity": "市场分析师视角"
+    },
+    {
+      "title": "文胸内裤塑身衣OEM选厂根本不是同件事：按品类匹配供应商才能不翻车、内行人不会告诉你的选厂秘密",
+      "topic_keywords": [
+        "内衣工厂",
+        "OEM",
+        "品类匹配",
+        "供应商选择"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-25T17:05:21.728426",
+      "h2_count": 6,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "酒店工程窗帘B1级阻燃认证：2026年最新验收标准与采购成本预算指南全解析",
+      "topic_keywords": [
+        "酒店工程窗帘",
+        "B1级阻燃",
+        "阻燃认证",
+        "工程帘采购"
+      ],
+      "slug": "tanhuo",
+      "category": "tanhuo",
+      "published_at": "2026-04-25T18:12:23.036947",
+      "h2_count": 4,
+      "identity": "采购主管视角"
+    },
+    {
+      "title": "锦纶长丝市场冰火两重天：常规品跌价、差异化产品涨价，跟单员应对策略与采购窗口分析",
+      "topic_keywords": [],
+      "slug": "tanjia",
+      "category": "tanjia",
+      "published_at": "2026-04-25T19:24:39.665737",
+      "h2_count": 5,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "2026年家纺选品采购新风向：电商卖家和软装设计师都在抢的爆款面料与选品策略",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-25T20:30:11.719140",
+      "h2_count": 5,
+      "identity": "市场分析师视角"
+    },
+    {
+      "title": "内衣OEM代工三角产能格局深度解读：汕头晋江广州供应商怎么选、拿货成本怎么算",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-25T21:17:49.110287",
+      "h2_count": 5,
+      "identity": "采购主管视角"
+    },
+    {
+      "title": "桃皮绒和麂皮绒到底差在哪—面料采购不懂原料参数区别，买回去的货客户不买单",
+      "topic_keywords": [],
+      "slug": "tanjia",
+      "category": "探价",
+      "published_at": "2026-04-25T21:26:09.637994",
+      "h2_count": 5,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "色纺纱为什么被越来越多服装品牌指定：采购主管算清的三笔账与三大产区验货指南",
+      "topic_keywords": [
+        "色纺纱",
+        "采购成本",
+        "环保认证",
+        "验货"
+      ],
+      "slug": "tanjia",
+      "category": "探价",
+      "published_at": "2026-04-25T22:17:04.026116",
+      "h2_count": 4,
+      "identity": "采购主管视角"
+    },
+    {
+      "title": "布行赊账拿货的生死劫：账期管理怎么做才能不断现金流又不丢客户——实战案例复盘",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-25T22:26:33.625220",
+      "h2_count": 5,
+      "identity": "档口老板视角"
+    },
+    {
+      "title": "亚马逊家居家纺选品数据与跨境出口策略——OEKO-TEX认证成差异化关键",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-25T22:57:04.808291",
+      "h2_count": 4,
+      "identity": "",
+      "article_id": 948
+    },
+    {
+      "title": "织带采购到底怎么算成本——跟单老手逐项拆解材质工艺与供应商筛选三大维度",
+      "topic_keywords": [
+        "织带",
+        "成本",
+        "供应商筛选",
+        "验货"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T06:20:23.811529",
+      "h2_count": 3,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "功能性窗帘成本拆解——阻燃抗菌三防整理价格差多少、酒店工程采购商必知的溢价逻辑",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T06:42:26.358350",
+      "h2_count": 5,
+      "identity": ""
+    },
+    {
+      "title": "凉感内裤面料大横评：锦纶凉感vs铜氨纤维vs玉石纤维，哪个真实有效、哪个在收智商税",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T07:08:25.208294",
+      "h2_count": 4,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "服装标签吊牌成本相差五倍：品牌商和电商卖家必知的标签材质选择与成本控制指南",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T08:14:02.068840",
+      "h2_count": 4,
+      "identity": "设计师视角"
+    },
+    {
+      "title": "春亚纺和涤塔夫到底差在哪：采购商不懂面料密度和纱支特性，吃过亏才懂的选型实战指南",
+      "topic_keywords": [
+        "春亚纺",
+        "涤塔夫",
+        "T数",
+        "选型匹配",
+        "验货三步法"
+      ],
+      "slug": "tanjia",
+      "category": "探价",
+      "published_at": "2026-04-26T08:24:48.272419",
+      "h2_count": 4,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "科技布绒布麻布三大沙发面料成本拆解——涤纶涨价压力下采购商怎么选才不亏",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T08:54:10.611566",
+      "h2_count": 5,
+      "identity": ""
+    },
+    {
+      "title": "中国纺企越南投资又加码：晶苑国际第六工厂背后的采购链重构与B端买家的应对策略",
+      "topic_keywords": [
+        "越南投资",
+        "晶苑国际",
+        "供应链重构",
+        "B端买家"
+      ],
+      "slug": "tanlu",
+      "category": "探路",
+      "published_at": "2026-04-26T09:06:15.851954",
+      "h2_count": 4,
+      "identity": "市场分析师视角"
+    },
+    {
+      "title": "功能面料参数如何高效转化为电商详情页卖点？防晒凉感面料话术提炼实战手册",
+      "topic_keywords": [
+        "商详情",
+        "话术提",
+        "面料话",
+        "功能面",
+        "面料参",
+        "提炼实",
+        "转化为",
+        "凉感面",
+        "参数如",
+        "如何高",
+        "实战手",
+        "卖点防",
+        "手册",
+        "情页卖",
+        "为电商",
+        "高效转",
+        "防晒凉"
+      ],
+      "slug": "tandan",
+      "category": "探单",
+      "published_at": "2026-04-26T09:20:35.090646",
+      "h2_count": 5,
+      "identity": ""
+    },
+    {
+      "title": "再生纤维素纤维在内衣中的应用：莫代尔竹纤维天丝醋酸面料选购指南对比一文说清楚",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T09:37:17.652478",
+      "h2_count": 4,
+      "identity": ""
+    },
+    {
+      "title": "南通和绍兴柯桥四件套拿货成本到底差多少60支到100支床品产区真实对比与采购决策分析",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T11:02:13.483292",
+      "h2_count": 5,
+      "identity": "档口老板视角"
+    },
+    {
+      "title": "缝纫线规格参数怎么选：涤纶线锦纶线纯棉线各类别针号与用途匹配，一文说清楚",
+      "topic_keywords": [
+        "缝纫线",
+        "涤纶线",
+        "锦纶线",
+        "纯棉线",
+        "针号"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T11:12:41.432931",
+      "h2_count": 4,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "广东浙江福建三大家居服核心产区工人工资真实对比：到手时薪三地差多少跟单老手用数据说清楚",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T11:23:08.966039",
+      "h2_count": 4,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "退卷印和折痕到底怎么区分：坯布验货时肉眼快速判断的三个关键特征与防范技巧",
+      "topic_keywords": [
+        "退卷印",
+        "折痕",
+        "坯布验货",
+        "鉴别方法"
+      ],
+      "slug": "tanjia",
+      "category": "探价",
+      "published_at": "2026-04-26T13:37:01.986473",
+      "h2_count": 3,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "簇绒地毯工艺与成本拆解：临沂天津两大产业带价格差异与采购指南——家纺采购商必知的地毯选购策略",
+      "topic_keywords": [
+        "地毯",
+        "簇绒",
+        "临沂",
+        "天津",
+        "克重",
+        "产业带"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T13:43:47.955861",
+      "h2_count": 5,
+      "identity": "",
+      "article_id": 966
+    },
+    {
+      "title": "睡衣家居服工厂柔性快反转型：汕头佛山南通白牌货源怎么找、拿货成本怎么算",
+      "topic_keywords": [
+        "睡衣家居服",
+        "柔性快反",
+        "汕头",
+        "佛山",
+        "南通",
+        "工厂货源",
+        "成本结构"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T13:53:35.914365",
+      "h2_count": 4,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "越南纺织投资潮再提速：2026年B端买家应对策略与全球采购链重构实战指南",
+      "topic_keywords": [
+        "越南投资",
+        "供应链重构",
+        "B端采购",
+        "产业转移"
+      ],
+      "slug": "tanlu",
+      "category": "探路",
+      "published_at": "2026-04-26T14:07:45.642788",
+      "h2_count": 5,
+      "identity": "采购主管视角"
+    },
+    {
+      "title": "涤纶短纤和腈纶短纤价差突破8300元/吨：采购经理必须搞清的成本逻辑、替代边界与2026年行情预判",
+      "topic_keywords": [
+        "涤纶短纤",
+        "腈纶短纤",
+        "价差",
+        "采购策略",
+        "替代边界"
+      ],
+      "slug": "tanjia",
+      "category": "探价",
+      "published_at": "2026-04-26T14:14:21.329586",
+      "h2_count": 5,
+      "identity": "采购主管视角"
+    },
+    {
+      "title": "腈纶短纤15400元/吨高位震荡，坯布跟涨幅度和时间差怎么判断？贸易商必知的行情传导三步法",
+      "topic_keywords": [
+        "腈纶",
+        "涤纶",
+        "坯布",
+        "价格传导",
+        "贸易商"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T15:15:58.079118",
+      "h2_count": 4,
+      "identity": "市场分析师视角"
+    },
+    {
+      "title": "汕头文胸工厂和晋江运动内衣工厂怎么选：两个顶级产区打样体验与供应商评估实战对比",
+      "topic_keywords": [
+        "内衣工厂",
+        "汕头",
+        "晋江",
+        "供应商筛选",
+        "打样"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T15:23:26.399895",
+      "h2_count": 5,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "海宁经编工厂智能化改造：数字化排产系统解决多品种小批量交期难题——窗帘软装采购商必知的工厂升级逻辑",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T15:47:21.727584",
+      "h2_count": 5,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "GRS全球回收标准认证怎么拿：坯布出口海外工厂申请流程与审核要点实战指南",
+      "topic_keywords": [
+        "GRS认证",
+        "再生涤纶",
+        "出口合规",
+        "坯布"
+      ],
+      "slug": "tanjia",
+      "category": "探价",
+      "published_at": "2026-04-26T15:53:37.204712",
+      "h2_count": 5,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "服装电商退货率为何居高不下—跟单老手实战总结：五个有效降低退货率的实用对策",
+      "topic_keywords": [],
+      "slug": "tandan",
+      "category": "探单",
+      "published_at": "2026-04-26T16:18:00.258053",
+      "h2_count": 5,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "拉链采购商不会说的三个隐形成本：含铜量、磨齿率、库存价的内幕与避坑指南",
+      "topic_keywords": [
+        "拉链",
+        "含铜量",
+        "磨齿率",
+        "库存价",
+        "采购避坑"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T16:25:40.131629",
+      "h2_count": 4,
+      "identity": "采购主管视角"
+    },
+    {
+      "title": "首次对接内衣工厂必查的7个细节：订单翻车背后的工厂失信特征与验厂实战指南",
+      "topic_keywords": [
+        "内衣工厂",
+        "验厂",
+        "AQL",
+        "交期",
+        "报价单",
+        "选供应商"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T17:10:30.404159",
+      "h2_count": 7,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "凉感床品2026年夏爆款预测：天丝棉和莱赛尔哪个更值、电商卖家和软装设计师选品策略对比",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T18:17:01.702671",
+      "h2_count": 5,
+      "identity": "市场分析师视角"
+    },
+    {
+      "title": "腈纶15400元/吨横盘：保暖刚需稳、毛毯采购经理的真实成本逻辑与近期行情预判",
+      "topic_keywords": [
+        "腈纶",
+        "行情",
+        "成本逻辑",
+        "保暖面料",
+        "采购策略"
+      ],
+      "slug": "tanjia",
+      "category": "探价",
+      "published_at": "2026-04-26T19:25:25.792502",
+      "h2_count": 5,
+      "identity": "采购主管视角"
+    },
+    {
+      "title": "酒店布草采购商必看：GRS认证和OEKO-TEX认证到底差在哪怎么选才能不花冤枉钱",
+      "topic_keywords": [
+        "GRS认证",
+        "OEKO-TEX",
+        "酒店布草",
+        "采购避坑"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T20:34:56.819701",
+      "h2_count": 3,
+      "identity": "采购主管视角"
+    },
+    {
+      "title": "内衣跨境出口OEM采购新地图：亚马逊速卖通出口认证体系与东南亚国内双轨供应链配置指南",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T21:23:40.779891",
+      "h2_count": 5,
+      "identity": ""
+    },
+    {
+      "title": "飞织和普通纬编坯布到底差在哪：织机型号与纱线张力成本差距对比，一文说清楚",
+      "topic_keywords": [],
+      "slug": "tanjia",
+      "category": "探价",
+      "published_at": "2026-04-26T21:34:42.457825",
+      "h2_count": 5,
+      "identity": ""
+    },
+    {
+      "title": "越南建厂潮冲击波：中国坯布采购商必须搞清的产业链变局与2026年实战策略",
+      "topic_keywords": [
+        "越南投资",
+        "坯布采购",
+        "产业链变局",
+        "涤纶短纤",
+        "腈纶"
+      ],
+      "slug": "tanjia",
+      "category": "探价",
+      "published_at": "2026-04-26T22:18:51.982086",
+      "h2_count": 5,
+      "identity": "采购经理视角"
+    },
+    {
+      "title": "面料赊销账期越放越长的三个套路：布行被动催款根源分析与源头防控策略实战手册",
+      "topic_keywords": [
+        "面料赊销",
+        "账期管理",
+        "出口与跨境"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T22:37:19.482116",
+      "h2_count": 4,
+      "identity": "跟单员视角",
+      "article_id": 984
+    },
+    {
+      "title": "亚马逊美国站功能家纺选品指南：认证体系与运营节奏——中国家纺出口卖家的实战路径",
+      "topic_keywords": [
+        "亚马逊",
+        "功能家纺",
+        "选品",
+        "认证",
+        "运营节奏"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-26T22:53:13.688880",
+      "h2_count": 4,
+      "identity": "采购主管视角"
+    },
+    {
+      "title": "服装粘衬怎么选不踩坑：从工艺类型到采购成本，采购专员必知的粘衬选型全指南",
+      "topic_keywords": [
+        "粘衬",
+        "选型指南",
+        "服装辅料",
+        "采购成本"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-27T06:22:39.544233",
+      "h2_count": 4,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "窗帘定制价格怎么算才不吃亏轨道电机帘身三部分计价逻辑与2026年省钱采购策略",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-27T06:36:17.389304",
+      "h2_count": 5,
+      "identity": "软装设计师视角"
+    },
+    {
+      "title": "Modal给维品类的深度解析：内衣面料选型时如何区分普通Modal和兰精Modal的实战指南",
+      "topic_keywords": [
+        "Modal",
+        "兰精Modal",
+        "内衣面料",
+        "再生縦维素渓维"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-27T07:11:45.869096",
+      "h2_count": 4,
+      "identity": "采购主管视角",
+      "article_id": 988
+    },
+    {
+      "title": "缝纫线验货三大标准深度解析：断线率高和染色牢度差的最常见原因与采购对策",
+      "topic_keywords": [
+        "缝纫线",
+        "验货",
+        "断线率",
+        "染色牢度",
+        "402股",
+        "DTY",
+        "FDY"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-27T08:13:28.901108",
+      "h2_count": 4,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "盛泽新纤维复合交织面料成新爆款：多原料交织工艺怎么选型、对应哪些终端用途、采购商必知实战指南",
+      "topic_keywords": [
+        "复合交织面料",
+        "CVC交织",
+        "弹力交织",
+        "盛泽",
+        "选型匹配"
+      ],
+      "slug": "tanjia",
+      "category": "探价",
+      "published_at": "2026-04-27T08:27:49.754486",
+      "h2_count": 5,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "沙发布克重和耐久性到底什么关系：家用场景选面料不再迷茫的实战采购指南全",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-27T08:53:02.954291",
+      "h2_count": 5,
+      "identity": "档口老板视角"
+    },
+    {
+      "title": "纺织招商活动到底值不值？老采购用三个维度说清楚怎么判断一场活动该不该去",
+      "topic_keywords": [
+        "招商活动",
+        "采购商",
+        "对接会",
+        "活动评估"
+      ],
+      "slug": "tanlu",
+      "category": "探路",
+      "published_at": "2026-04-27T09:10:49.076779",
+      "h2_count": 5,
+      "identity": "采购主管视角"
+    },
+    {
+      "title": "广州中大布匹市场：服装电商卖家第一次去中大怎么高效拿货——完整流程与拿货谈判技巧",
+      "topic_keywords": [
+        "中大布匹市场",
+        "电商拿货",
+        "谈判技巧",
+        "跟单员"
+      ],
+      "slug": "tandan",
+      "category": "探单",
+      "published_at": "2026-04-27T09:24:14.160848",
+      "h2_count": 5,
+      "identity": "跟单员视角"
+    },
+    {
+      "title": "文胸内裤腋下汗渍黄变：三大预防工艺+2026年应对策略，采购跟单必知的防黄变实战指南",
+      "topic_keywords": [
+        "腋下黄变",
+        "拒水整理",
+        "抗菌整理",
+        "易去污",
+        "内衣采购"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-27T09:39:30.003090",
+      "h2_count": 6,
+      "identity": "跟单员视角",
+      "article_id": 994
+    },
+    {
+      "title": "床品套件包装成本相差五倍：简易包装和礼品装到底差在哪，采购商必知的溢价逻辑与成本优化指南",
+      "topic_keywords": [
+        "床品",
+        "包装成本",
+        "采购策略"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-27T11:02:44.064100",
+      "h2_count": 3,
+      "identity": "采购主管视角"
+    },
+    {
+      "title": "服装纽扣采购三大坑：塑料金属贝壳扣成本对比与翻车案例，一文说清楚怎么选",
+      "topic_keywords": [
+        "纽扣采购",
+        "塑料树脂扣",
+        "金属扣",
+        "贝壳扣",
+        "成本对比"
+      ],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-27T11:23:08.715345",
+      "h2_count": 5,
+      "identity": "采购主管视角"
+    },
+    {
+      "title": "针织大圆机实际产能怎么算：看设备数、算工时利用率、识虚报，采购跟单必知的产能鉴别法",
+      "topic_keywords": [],
+      "slug": "tanhuo",
+      "category": "探货",
+      "published_at": "2026-04-27T11:32:12.512770",
+      "h2_count": 4,
+      "identity": ""
     }
   ]
 }

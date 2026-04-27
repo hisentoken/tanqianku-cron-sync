@@ -7,6 +7,26 @@ version: 5.21.0
 NOTE: 调试方法论移至 skill textile-cron-debugging（手动触发、试点验证、jobs.json结构、故障排查）。
 ---
 
+### 11. 标题在正文重复出现（h1未删除导致标题显示两遍）2026-04-25
+
+**问题现象**：发布后文章在平台显示时，标题出现两遍——一次作为页面标题，一次作为正文第一行（h1样式）。
+
+**根因**：jobs.json prompt 中有一段从 `article_html` 的 `<h1>` 提取 `title_text` 的代码，但提取之后 `<h1>` 标签从未从 `article_html` 中删除。最终 `article_html`（仍含 `<h1>标题全文</h1>`）被传入 `gen_img_and_build_html`，生成 final_html 传给API的 `content` 字段。平台解析HTML时把 `<h1>` 也渲染出来了。
+
+**正确顺序**（不可打乱）：
+1. `h1_match = re.search(r'<h1[^>]*>(.*?)</h1>', article_html)` — 提取title
+2. `after_h1 = article_html.split('</h1>')[1]` — 在h1存在时计算，用于"标题不得作为正文开头"检查
+3. `assert first_chars != title_text` — 断言检查（依赖h1还在）
+4. **`article_html = re.sub(r'<h1[^>]*>.*?</h1>\s*', '', article_html, flags=re.DOTALL)`** — 删h1（关键！）
+5. `article_html = _re.sub(r'```html[\s\S]*?```', '', article_html)` — 清理代码围栏
+6. `final_html = gen_img_and_build_html(...)` — 生成最终HTML
+
+**为什么顺序重要**：步骤2依赖 `</h1>` 分割点来得到正文纯文本。如果先删h1再分割，`after_h1` 就变成整篇文档，断言逻辑失效。
+
+**已修复**：2026-04-25 全部76个job均已注入步骤4。
+
+---
+
 ### 10. write_recent 未在 jobs.json 中调用 = h2_count=0 根因（2026-04-21发现）
 
 **问题现象**：recent_articles 最新一篇 h2_count=0，说明 write_recent 从未被正确执行。
@@ -2579,6 +2599,50 @@ for j in d['jobs']:
     assert p.count('_validate_jpeg(\"/tmp/_gen_sf.jpg\", \"SiliconFlow\")') == 1, f'{j[\"name\"]}: SF验证缺失'
 print('全部66个任务图片验证注入正确 ✓')
 "
+```
+
+### 26. HTML_payload_60KB限制与本地兜底图片分辨率（2026-04-26实测）
+
+**问题现象**：`AssertionError: HTML总长度xxx超过60000字节限制` —— 文章内容正常，但本地兜底图经720px压缩后的base64编码过大，导致HTML总长超限。
+
+**根因**：本地兜底图（`image_cache/`目录）使用720px分辨率压缩时，base64字符串约64K字符；加上HTML标签和文章内容（约2KB），总计约66KB，触发60KB上限保护抛出异常。
+
+**实测数据**（`原料_nylon_polyester_对比_20260413.jpg`）：
+- 720px压缩 → 28KB文件 → base64约64K字符 → HTML总长约66KB → **超限**
+- 480px压缩 → 28KB文件 → base64约37K字符 → HTML总长约39KB → **通过**
+
+**修复方案**：本地兜底图使用480px分辨率压缩（而非720px），平衡图片质量与base64大小：
+
+```python
+# 本地兜底图压缩参数改为480px
+r = subprocess.run(["ffmpeg", "-i", src, "-q:v", "2", "-vf", "scale=480:-1", "-y", compressed],
+                  capture_output=True, text=True, timeout=60)
+assert os.path.getsize(compressed) < 150 * 1024
+b64 = base64.b64encode(open(compressed, "rb").read()).decode()
+# 480px: b64约37K，HTML总长约39KB，通过60KB限制
+# 720px: b64约64K，HTML总长约66KB，超限崩溃
+```
+
+**为什么本地兜底图比API层图片base64更大**：本地兜底图是已压缩过的jpg，再次压缩时ffmpeg无法高效压缩（已经是压缩格式）；而API层（MiniMax/智谱）生成的是原始高质量图片，ffmpeg压缩效率更高。同一个源文件，720px压缩后API层约50KB→base64约67K，本地兜底图720px压缩后反而base64约64K（因为是二次压缩，效果差）。
+
+**当前各层状态（2026-04-26）**：
+- MiniMax #1：当日额度耗尽（2056 `usage limit exceeded`）
+- MiniMax #2：**Key疑似失效/ revoked**（1004 `login fail: Please carry the API secret key in the 'Authorization' field`）——需重新验证key有效性或重新配置
+- 智谱AI CogView-3：429 Too Many Requests（限流）
+- SiliconFlow Qwen：**Key占位符`sk-`从未替换**，始终401
+- 本地兜底：正常（480px压缩后通过）
+
+**验证命令**：
+```bash
+# 检查本地兜底图数量
+ls /home/tanqianku/.hermes/image_cache/*.jpg | wc -l
+
+# 验证MiniMax #2 key是否有效
+curl -s -X POST https://api.minimax.chat/v1/image_generation \
+  -H "Authorization: Bearer sk-cp-OBJYTXCbg4PQS6gO0Col8fT_cEgZY2Ur_6qhB-bWDAqiuFkciSntwIM0U26E-8HrqioqNRbcp8sgdCksRsQTmSoe-PnltkGuNbsE6xxDByKB-Yqr2nNfWNik" \
+  -H "Content-Type: application/json" \
+  -d '{"model":"image-01","prompt":"test","aspect_ratio":"16:9"}'
+# 若返回1004或401，说明key已失效，需重新配置
 ```
 
 ### 23. 写作禁止引导词——禁止"引子："、"写作思路："等内部备注混入正文（2026-04-17）

@@ -130,7 +130,31 @@ systemctl --user restart hermes-gateway.service
 
 **Critical: TimeoutStopSec must be 300+**: The gateway uses a 60s drain timeout for graceful shutdown. If `TimeoutStopSec` is shorter (e.g. the default 60s), systemd sends SIGKILL before drain completes. Evidence: `code=killed, status=9/KILL` in `systemctl status`.
 
-### 5. Token Config Key Format
+### 5. Bot Token 无效导致连接失败（404 Not Found）
+**Symptom**: Gateway 日志显示 `httpx.ConnectError: All connection attempts failed`，`hermes gateway status` 报 `telegram startup failed`。直接 curl Telegram API 返回 `{"ok":false,"error_code":404,"description":"Not Found"}`。
+
+**Cause**: `.env` 中的 token 值错误或不完整（如 `819074...tNe0` 被截断显示），或 Bot 在 @BotFather 侧已被删除。
+
+**Diagnosis — 直接验证 token 是否有效**:
+```bash
+# 查 token 对应的 bot 用户名
+curl -s https://api.telegram.org/bot<你的TOKEN>/getMe
+# 返回 {"ok":true,"result":{"username":"xxx_bot",...}} = token 有效
+# 返回 {"ok":false,"error_code":404,"description":"Not Found"} = token 错误
+
+# 代理环境下
+curl -x http://127.0.0.1:7897 -s https://api.telegram.org/bot<TOKEN>/getMe
+```
+
+**Fix**: 用正确 token 覆盖：
+```bash
+hermes config set TELEGRAM_BOT_TOKEN "<完整Token>"
+systemctl --user restart hermes-gateway.service
+```
+
+**Note**: `hermes config show` 只显示 `Telegram: configured`，不显示 token 值。token 完整值要查 `.env` 文件或用上面 curl 方式验证。
+
+### 6. Token Config Key Format
 **Symptom**: `ValueError: Invalid environment variable name: 'TELEGRAM.BOT_TOKEN'`
 
 **Cause**: Wrong format used with `hermes config set`.
