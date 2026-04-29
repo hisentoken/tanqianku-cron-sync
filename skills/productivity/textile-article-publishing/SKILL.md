@@ -16,14 +16,23 @@ NOTE: 调试方法论移至 skill textile-cron-debugging（手动触发、试点
 **正确顺序**（不可打乱）：
 1. `h1_match = re.search(r'<h1[^>]*>(.*?)</h1>', article_html)` — 提取title
 2. `after_h1 = article_html.split('</h1>')[1]` — 在h1存在时计算，用于"标题不得作为正文开头"检查
-3. `assert first_chars != title_text` — 断言检查（依赖h1还在）
-4. **`article_html = re.sub(r'<h1[^>]*>.*?</h1>\s*', '', article_html, flags=re.DOTALL)`** — 删h1（关键！）
+3. **`first_p_match` vs `h1_match` 断言检查** — 提取第一个`<p>`纯文本与`<h1>`纯文本比较（关键！2026-04-27修复）
+4. **`article_html = re.sub(r'<h1[^>]*>.*?</h1>\s*', '', article_html, flags=re.DOTALL)`** — 删h1
 5. `article_html = _re.sub(r'```html[\s\S]*?```', '', article_html)` — 清理代码围栏
 6. `final_html = gen_img_and_build_html(...)` — 生成最终HTML
 
-**为什么顺序重要**：步骤2依赖 `</h1>` 分割点来得到正文纯文本。如果先删h1再分割，`after_h1` 就变成整篇文档，断言逻辑失效。
+**正确检查代码**（2026-04-27修复，替代旧的 `_first_chars != _title_text` 错误逻辑）：
+```python
+# 检查文章第一段是否为标题（标题不得作为正文开头）
+_after_h1 = article_html.split('</h1>')[1] if '</h1>' in article_html else article_html
+_first_p_m = re.search(r'<p[^>]*>(.*?)</p>', _after_h1, re.DOTALL)
+_first_p_text = re.sub(r'<[^>]+>', '', _first_p_m.group(1)).strip() if _first_p_m else ''
+assert _first_p_text != _title_text, f"标题在正文开头重复：「{_title_text}」，当前任务中止！"
+```
 
-**已修复**：2026-04-25 全部76个job均已注入步骤4。
+**为什么不能用 `_first_chars` 原始字符前缀比较**：当LLM把标题完整放入`<p>标签</p>`时，`_after_h1[:len(_title_text)]`取到的是`<p>标题...`的前缀字符，与纯标题文本不相等，断言失效。必须解析`<p>`标签内容再比较。
+
+**已修复**：2026-04-27 全部76个job均已替换为正确检查。
 
 ---
 
@@ -206,16 +215,16 @@ assert 35 <= len(title) <= 65, f"标题长度{len(title)}字（不在35-65范围
 title = _re.sub(r'[？！？]', '', title)
 ```
 
-**第二段：文章开头不得为标题（2026-04-21新增，所有76个job已注入）**：
+**第二段：文章开头不得为标题（2026-04-21新增，2026-04-27修正）**：
 ```python
-# 检查文章第一句是否为标题（标题不得作为正文开头）
-first_p_match = re.search(r'<p[^>]*>([^<]+)</p>', article_html)
-if first_p_match:
-    first_p_text = first_p_match.group(1).strip()
-    h1_match = re.search(r'<h1[^>]*>([^<]+)</h1>', article_html)
-    if h1_match and first_p_text == h1_match.group(1).strip():
-        raise AssertionError('文章第一段与标题完全相同，违反"标题不得作为正文开头"规则，当前任务中止！')
+# 检查文章第一段是否为标题（标题不得作为正文开头）
+_after_h1 = article_html.split('</h1>')[1] if '</h1>' in article_html else article_html
+_first_p_m = re.search(r'<p[^>]*>(.*?)</p>', _after_h1, re.DOTALL)
+_first_p_text = re.sub(r'<[^>]+>', '', _first_p_m.group(1)).strip() if _first_p_m else ''
+assert _first_p_text != _title_text, f"标题在正文开头重复：「{_title_text}」，当前任务中止！"
 ```
+
+**注意**：必须先用 `</h1>` 分割得到 `_after_h1` 再在其内搜索 `<p>`，且用 `re.DOTALL` 匹配含嵌套标签的段落，再用 `re.sub(r'<[^>]+>', '', ...)` 去掉所有标签取纯文本比较。
 
 注入后从赋值到 `gen_img_and_build_html` 调用之间约318字符（含注入代码）。
 
@@ -2601,48 +2610,53 @@ print('全部66个任务图片验证注入正确 ✓')
 "
 ```
 
-### 26. HTML_payload_60KB限制与本地兜底图片分辨率（2026-04-26实测）
+### 26. HTML_payload_60KB限制与图片压缩分辨率（2026-04-27实测更新）
 
-**问题现象**：`AssertionError: HTML总长度xxx超过60000字节限制` —— 文章内容正常，但本地兜底图经720px压缩后的base64编码过大，导致HTML总长超限。
+**问题现象**：`AssertionError: HTML总长度xxx超过60000字节限制` 或 `Payload超过60000字节限制`
 
-**根因**：本地兜底图（`image_cache/`目录）使用720px分辨率压缩时，base64字符串约64K字符；加上HTML标签和文章内容（约2KB），总计约66KB，触发60KB上限保护抛出异常。
+**根因**：base64编码将二进制数据膨胀约33%。中文内容UTF-8编码比ASCII大3%。Payload = HTML(含base64) × 1.03(UTF-8开销)。
 
-**实测数据**（`原料_nylon_polyester_对比_20260413.jpg`）：
-- 720px压缩 → 28KB文件 → base64约64K字符 → HTML总长约66KB → **超限**
-- 480px压缩 → 28KB文件 → base64约37K字符 → HTML总长约39KB → **通过**
+**实测数据（2026-04-27修正）**：
 
-**修复方案**：本地兜底图使用480px分辨率压缩（而非720px），平衡图片质量与base64大小：
+| 压缩分辨率 | MiniMax API图片base64 | HTML总长 | Payload大小(含中文) | 结果 |
+|-----------|---------------------|---------|-------------------|------|
+| 720px | ~85KB | ~88KB | ~92KB | ❌ 超限 |
+| 480px | ~57KB | ~58KB | ~61KB | ❌ Payload超限 |
+| **360px** | **~39KB** | **~40KB** | **~42KB** | **✅ 通过** |
 
+**关键发现**：本地兜底图480px压缩后base64约37KB（旧文档数据，针对已有图片的压缩效率）。**MiniMax API生成的图片**内容更丰富、压缩效率更低，同样480px压缩后base64达57KB。中文UTF-8编码额外增加~3%开销。**360px是所有图片层的统一安全分辨率**。
+
+**修复代码（所有图片生成层统一使用360px）**：
 ```python
-# 本地兜底图压缩参数改为480px
-r = subprocess.run(["ffmpeg", "-i", src, "-q:v", "2", "-vf", "scale=480:-1", "-y", compressed],
+# 所有层统一使用360px + q=2压缩
+r = subprocess.run(["ffmpeg", "-i", img_path, "-q:v", "2", "-vf", "scale=360:-1", "-y", compressed],
                   capture_output=True, text=True, timeout=60)
 assert os.path.getsize(compressed) < 150 * 1024
 b64 = base64.b64encode(open(compressed, "rb").read()).decode()
-# 480px: b64约37K，HTML总长约39KB，通过60KB限制
-# 720px: b64约64K，HTML总长约66KB，超限崩溃
+# 360px: b64约39KB，HTML约40KB，Payload约42KB，通过60KB限制
 ```
 
-**为什么本地兜底图比API层图片base64更大**：本地兜底图是已压缩过的jpg，再次压缩时ffmpeg无法高效压缩（已经是压缩格式）；而API层（MiniMax/智谱）生成的是原始高质量图片，ffmpeg压缩效率更高。同一个源文件，720px压缩后API层约50KB→base64约67K，本地兜底图720px压缩后反而base64约64K（因为是二次压缩，效果差）。
-
-**当前各层状态（2026-04-26）**：
-- MiniMax #1：当日额度耗尽（2056 `usage limit exceeded`）
-- MiniMax #2：**Key疑似失效/ revoked**（1004 `login fail: Please carry the API secret key in the 'Authorization' field`）——需重新验证key有效性或重新配置
+**当前各层状态（2026-04-27）**：
+- MiniMax #1：✅ 正常（但base64大，必须用360px）
+- MiniMax #2：✅ 正常
 - 智谱AI CogView-3：429 Too Many Requests（限流）
-- SiliconFlow Qwen：**Key占位符`sk-`从未替换**，始终401
-- 本地兜底：正常（480px压缩后通过）
+- SiliconFlow Qwen：❌ Key占位符`sk-`从未替换，始终401
+- 本地兜底：✅ 正常（34张图，今日已用2张）
 
 **验证命令**：
 ```bash
-# 检查本地兜底图数量
-ls /home/tanqianku/.hermes/image_cache/*.jpg | wc -l
+# 验证Payload大小
+python3 -c "
+import json
+data = json.dumps({'title':'测试','content':'x'*40000,'slug':'tanhuo','category':'tanhuo'}, ensure_ascii=False).encode('utf-8')
+print(f'Payload大小: {len(data)}字节')
+"
 
-# 验证MiniMax #2 key是否有效
+# 验证MiniMax key
 curl -s -X POST https://api.minimax.chat/v1/image_generation \
-  -H "Authorization: Bearer sk-cp-OBJYTXCbg4PQS6gO0Col8fT_cEgZY2Ur_6qhB-bWDAqiuFkciSntwIM0U26E-8HrqioqNRbcp8sgdCksRsQTmSoe-PnltkGuNbsE6xxDByKB-Yqr2nNfWNik" \
+  -H "Authorization: Bearer sk-cp-gvfuD8aTsLIzQ-wQb16s3022yGQWEN3RNsaIRq0J8LiszIHyee-KEye-ZRisw7kUpGfvMOxve62Q65PCUQoIwaQtNT_TtVkc1WAV9H2juMuzq5J6a_dfO_A" \
   -H "Content-Type: application/json" \
   -d '{"model":"image-01","prompt":"test","aspect_ratio":"16:9"}'
-# 若返回1004或401，说明key已失效，需重新配置
 ```
 
 ### 23. 写作禁止引导词——禁止"引子："、"写作思路："等内部备注混入正文（2026-04-17）
